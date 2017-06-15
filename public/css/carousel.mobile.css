@@ -1,0 +1,58 @@
+.translationllc__carousel__slides__slide {
+  width: 100%;
+  position: absolute;
+  /*opacity: 0;*/
+  /*transform: scale(0);*/
+  transition: left 0.75s;
+}
+.translationllc__carousel__slides__slide-in--right {
+  left: -500px;
+}
+.translationllc__carousel__slides__slide-in--left {
+  left: 500px;
+}
+.translationllc__carousel__slides__slide__image {
+  width: 100%;
+  max-height: 250px;
+}
+.translationllc__active-slide {
+  opacity: 1;
+  left: 0;
+  /*transform: scale(1);*/
+  transition: left 1s;
+}
+.translationllc__carousel__slides {
+  min-height: 300px;
+}
+.translationllc__carousel {
+  position: relative;
+  display: block;
+}
+.translationllc__carousel__slide-meatballs {
+  display: flex;
+  justify-content: center;
+}
+.translationllc__carousel__slide-meatballs__meatball {
+  margin-left: 5px;
+  cursor: pointer;
+  color: grey;
+}
+.translationllc__active-meatball {
+  color: white;
+}
+.translationllc__carousel__content {
+  width: 90%;
+  margin: auto;
+}
+.translationllc__intro__carousel--desktop {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+}
+carousel {
+  margin-bottom: 1.875rem;
+  display: block;
+  overflow: hidden;
+}

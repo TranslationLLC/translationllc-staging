@@ -1,0 +1,23 @@
+.translationllc__section--work {
+  transform: translate3d(0, -100%, 0);
+  background: black;
+}
+.translationllc__work-stoutism {
+  width: 100%;
+  background-image: url(../assets/Gradient_3.png);
+  top: 100%;
+  position: relative;
+}
+.translationllc__main__work__stoutism {
+  background-image: url(../assets/Translation_MobileSite_1334x750_Gradient_3.png);
+}
+.translationllc__main__work__stoutism__words {
+  background-image: url(../assets/f_ck-average.svg);
+}
+.translationllc__main__work__work-mission {
+  position: relative;
+  background-image: url(../assets/TranslationPhotos301-color.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  z-index: 3;
+}

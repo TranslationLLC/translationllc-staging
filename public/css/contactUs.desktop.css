@@ -1,0 +1,9 @@
+.translationllc__contact-us__two-column-container {
+  display: flex;
+}
+.translationllc__contact-us__two-column-container__column {
+  width: 41%;
+}
+.translation__contact-us {
+  padding-left: 5%;
+}

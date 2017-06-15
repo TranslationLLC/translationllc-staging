@@ -1,0 +1,14 @@
+.translationllc__main__intro__we-are-translation {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  height: 80%;
+  transform: translateY(-50%);
+  background-image: url(../assets/translation_logo.svg);
+}
+.translationllc__main__intro__we-are {
+  background-color: #171717;
+  height: 100vh;
+}

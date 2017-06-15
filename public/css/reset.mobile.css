@@ -1,0 +1,59 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+main {
+  height: 100%;
+}
+p {
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Mark W01 Book';
+  cursor: pointer;
+}
+p {
+  font-family: 'Mark W01 Book';
+}
+hr {
+  color: gray;
+  opacity: 0.1;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  font-family: 'Mark W01 Bold';
+}
+h2, h3, h5 {
+  margin: 0;
+  font-family: 'Mark W01 Book';
+}
+
+.translationllc__section {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+.translationllc__img {
+  width: 100%;
+}

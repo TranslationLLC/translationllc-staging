@@ -1,0 +1,155 @@
+.translationllc__video__container--intro {
+  width: 100%;
+  position: relative;
+  background-image: url(../assets/translation-mobile-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.translationllc__video__container--work-video {
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.translationllc__video__container--work-video-hidden {
+  background-image: none !important;
+}
+.translationllc__video__container--work-video--one {
+  background-image: url(../assets/KP_NBA_mobile.jpg);
+}
+.translationllc__video__container--work-video--two {
+  background-image: url(../assets/NFL_mobile.jpg);
+}
+.translationllc__video__container--work-video--three {
+  background-image: url(../assets/VCF_mobile.jpg);
+}
+.translationllc__video__container--work-video--four {
+  background-image: url(../assets/AppleMusic_mobile.jpg);
+}
+.translationllc__video__container--work-video--five {
+  background-image: url(../assets/mia-mobile.jpg);
+}
+.translationllc__video__container--work-video--six {
+  background-image: url(../assets/StateFarm_ChrisPaul_mobile.jpg);
+}
+.translationllc__video__container--work-video--seven {
+  background-image: url(../assets/BrooklynNets_mobile.jpg);
+}
+.translationllc__video__container--work-video--eight {
+  background-image: url(../assets/Champs_Khaled_mobile.jpg);
+}
+.translationllc__video__container--work-video--nine {
+  background-image: url(../assets/30_Shaq_Still003.jpg);
+}
+.translationllc__video__container__video--work-video {
+  width: 100%;
+}
+.translation__video__content-container--work-video {
+  position: absolute;
+  top: 80%;
+}
+.translationllc__video__container__video--intro {
+  width: 100%;
+}
+.translation__video__content-container--intro {
+  position: absolute;
+  top: 80%;
+}
+.translationllc__video__play-button {
+  border-radius: 50%;
+  border: none;
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  color: gray;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  cursor: pointer;
+  padding: 0;
+  left: 0;
+  background-image: url(../assets/playbutton.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.translationllc__video__container__svg-overlay--intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+tllcvideo {
+  display: block;
+  position: relative;
+  z-index: 3 !important;
+}
+.translationllc__video__container__overlay--intro {
+  position: absolute;
+  width: 200px;
+  height: 80%;
+  top: 10%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.translationllc__video__container__svg-overlay--intro {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  background-size: 70%;
+  transform: translateY(-50%);
+  background-image: url(../assets/WeAreCulturalCatalysts_NoPlus.svg)
+}
+figure {
+  background-color: black;
+}
+video {
+  opacity: 0;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+.translation__main__video-text-content__header {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.translation__main__video-text-content {
+  font-size: 16px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  background: #000;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.translationllc__video__container__overlay__first-block {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  font-size: 17px;
+  letter-spacing: 4px;
+}
+.translationllc__video__container__overlay__second-block {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  letter-spacing: 4px;
+  bottom: 0;
+  font-size: 17px;
+  text-align: center;
+  flex-direction: column;
+}

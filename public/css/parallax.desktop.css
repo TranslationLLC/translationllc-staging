@@ -1,0 +1,7 @@
+.backgroundParallaxOne {
+  min-height: 100vh;
+  display: none;
+}
+#backgroundParallaxOnePlaceholder {
+  min-height: 100vh;
+}

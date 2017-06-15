@@ -1,0 +1,22 @@
+.translationllc__section--news {
+  transform: translate3d(0, -100%, 0);
+  background: black;
+  top: 0;
+}
+.translationllc__news-stoutism {
+  width: 100%;
+  height: 50%;
+  background-image: url(../assets/Gradient_2.png);
+  top: 105%;
+  position: relative;
+  margin-bottom: 500px;
+}
+#newsSectionStoutism {
+  margin-bottom: 1000px;
+}
+.translationllc__news__articles {
+  transform: translateZ(0);
+}
+.translationllc__news__articles__article-container__publication {
+  color: white;
+}

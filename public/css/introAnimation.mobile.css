@@ -1,0 +1,102 @@
+.translationllc__intro__animation {
+  position: fixed;
+  height: 100%;
+  transition: opacity .2s ease-in;
+  background-image: url(../assets/Emcee.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.translationllc__intro__carousel--height-aspect-ratio {
+  /*position: absolute;*/
+  height: 100%;
+}
+.translationllc__intro__carousel--ipad {
+  width: 100%;
+}
+.translationllc__intro__background__we-are-translation {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.translationllc__intro__background__plus {
+  background-image: url(../assets/PlusIcon.svg);
+  width: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.translationllc__intro__background__plus--resolve {
+  background-image: url(../assets/PlusIcon.svg);
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.translationllc__resolve {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 111px;
+  background-image: url(../assets/WeAreCulturalCatalysts1.svg);
+}
+.parallax--intro {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+.translationllc__intro__background__we-are-translation--desktop {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80vh;
+  z-index: 10;
+}
+.translationllc__intro__background__plus--desktop {
+  background-image: url(../assets/PlusIcon.svg);
+  width: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translateY(-50%) scale(1);
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  top: 45%;
+}
+.translationllc__intro__carousel--desktop__wrapper {
+  height: 350%;
+}

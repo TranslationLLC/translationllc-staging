@@ -1,0 +1,8 @@
+.translationllc__main {
+  width: 100%;
+  margin: auto;
+  color: white;
+  background: #171717;
+  position: relative;
+  transition: opacity 0.2s ease-in;
+}

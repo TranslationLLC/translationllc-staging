@@ -1,0 +1,47 @@
+.translationllc__main__culture__stoutism {
+  background-image: url(../assets/Translation_MobileSite_1334x750_Gradient_4.png);
+}
+#minorsCarousel {
+  height: 100%;
+  z-index: 3;
+}
+.translationllc__main__culture__emcee {
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+.translationllc__main__culture__stoutism__words {
+  background-image: url(../assets/african-proverb.svg);
+}
+.translationllc__main__culture__culture-mission {
+  background-image: url(../assets/ourcultureMobile.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.translationllc__main__culture__culture-mission__svg {
+  width: 70%;
+  display: block;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.translationllc__main__culture__emcee__moniker {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.translationllc__main__work__work-mission__words {
+  width: 70%;
+}
+.translationllc__main__culture__emcee__opacity-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,26 @@
+.translationllc__header {
+  background: transparent;
+  position: fixed;
+  height: 50px;
+}
+.translationllc__header__translation-logo {
+  background-size: 9rem;
+  width: 144px;
+  position: absolute;
+  display: block;
+  left: 1%;
+}
+.translationllc__nav {
+  position: absolute;
+  right: 0;
+  width: 19%;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.translationllc__nav__work {
+  flex: 0 1 50%;
+}
+.translationllc__nav__culture {
+  flex: 0 1 50%;
+}

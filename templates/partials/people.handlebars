@@ -1,0 +1,5 @@
+{{#each people}}
+  {{name.first}} {{name.last}}
+  <img style="width: 100px; height: 100px" src="https://s3.amazonaws.com/translation-bucket/peopleImages/{{image.filename}}" alt="">
+  <p>{{quote}}</p>
+{{/each}}

@@ -1,0 +1,33 @@
+.translationllc__main__articles__article {
+  display: flex;
+  padding: 45px 0 45px 0;
+  flex-direction: column;
+  margin-left: 20%;
+}
+.translationllc__main__articles__article-publication {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.translationllc__main__articles__news {
+  font-size: 40px;
+}
+.translationllc__main__articles__article--news {
+  margin-left: 20%;
+}
+.translationllc__main__articles__article-link{
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.translationllc__main__articles__article-author {
+  font-size: 14px;
+}
+.translationllc__main__articles__article-title-author-container {
+  width: 60%;
+  position: relative;
+}
+.translationllc__main__articles {
+  padding: 1.625rem 1% 2rem;
+}
+.translationllc__news-hr {
+  display: none;
+}

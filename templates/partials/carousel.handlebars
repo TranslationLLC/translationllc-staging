@@ -1,0 +1,19 @@
+<carousel id="{{carouselId}}" class="translationllc__carousel">
+  <div id="{{carouselId}}" class="translationllc__carousel__slides">
+    {{#each slides}}
+    <div class="translationllc__carousel__slides__slide">
+      <img data-slide-id="{{@index}}" class="translationllc__carousel__slides__slide__image" src="https://s3.amazonaws.com/translation-bucket/slideImages/{{this.image.filename}}" alt="">
+    </div>
+    {{/each}}
+  </div>
+  <ul class="translationllc__carousel__slide-meatballs">
+    {{#each slides}}
+      <li data-meatball-number="{{@index}}" class="mdi mdi-checkbox-blank-circle translationllc__carousel__slide-meatballs__meatball" id="carousel-meatballs-{{../carouselId}}"></li>
+    {{/each}}
+  </ul>
+  <div class="translationllc__carousel__content">
+    <h3>{{carouselHeader}}</h3>
+    <p>{{carouselContent}}</p>
+  </div>
+</carousel>
+<hr>

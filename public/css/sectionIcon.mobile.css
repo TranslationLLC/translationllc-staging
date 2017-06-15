@@ -1,0 +1,32 @@
+.translationllc__section-icon {
+  position: relative;
+  background: black;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.translationllc__section-icon__words {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.translationllc__section-icon__copy {
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.translationllc__section-icon__words--work-that-works {
+  width: 70%;
+}
+.translationllc__section-icon__words--majors-minors {
+  width: 70%;
+}
+.translationllc__section-icon__words--emcee {
+  width: 70%;
+}
