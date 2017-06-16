@@ -341,14 +341,7 @@ class CarouselComponent {
         } else {
           this.shuffledIntroUrlsMobile.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         }
-      } else if (detectionData.isLandscape) {
-        this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopTranslatorUrls, this.desktopImageUrls);
-        if (detectionData.useHeightAspectRatio) {
-          this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
-        } else {
-          this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', 'fixWidth'));
-        }
-      } else if (detectionData.isIpad || detectionData.isDesktop) {
+      } else if (detectionData.isIpad || detectionData.isDesktop || detectionData.isLandscape) {
         this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopTranslatorUrls, this.desktopImageUrls);
         if (detectionData.useHeightAspectRatio) {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));

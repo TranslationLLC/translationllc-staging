@@ -45,45 +45,6 @@ class InitComponent {
   }
   __navigateToIntroSection(evt) {
     window.location.hash = 'top';
-    let startY = this.__currentPosition(),
-        stopY = this.__elmYPosition(this.translationllcMainHash),
-        distance = stopY >  startY ? stopY - startY : startY - stopY,
-        speed,
-        step,
-        leapY,
-        timer,
-        i,
-        j;
-    if (distance < 100) {
-      window.scrollTo(0, stopY);
-    }
-    speed = Math.round(distance / 10000);
-    if (speed >= 20) speed = 20;
-    step = Math.round(distance / 100);
-    leapY = stopY > startY ? startY + step : startY  - step;
-    timer = 0;
-    if (stopY > startY) {
-      for (i = startY; i < stopY; i += step) {
-        setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
-        leapY += step;
-        if (leapY > stopY) {
-          leapY = stopY;
-          timer++;
-        }
-        return;
-      }
-    }
-    for (j = startY; j > stopY; j -= step) {
-      setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
-      leapY -= step;
-      if (leapY < stopY) {
-        leapY -= step;
-        if (leapY < stopY) {
-          leapY = stopY;
-          timer++;
-        }
-      }
-    }
   }
   __showIntro(detectionData) {
     if (detectionData.isDesktop) {
@@ -145,7 +106,6 @@ class InitComponent {
     this.eventBus.addChangeListener('signalDetection', this.__detection.bind(this));
   }
   __animationScrollHandler(data) {
-    console.log('this.isDesktop ', this.isDesktop);
     if (!this.initialScroll) {
       this.animationThreshold = 20;
       if (!this.isDesktop) {
