@@ -10,6 +10,7 @@ class VideoComponent {
     this.tllcVideoSvgOverlaysIndex = {};
     this.tllcVideoButtonsIndex = {};
     this.tllcBackgroundImageUrlsIndex = {};
+    this.DOMeventsBound = false;
     this.currentVideo;
     this.currentVideoId;
     this.fullScreenEnabled = !!(document.fullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled || document.webkitSupportsFullscreen || document.webkitFullscreenEnabled || document.createElement('video').webkitRequestFullScreen);
@@ -42,7 +43,7 @@ class VideoComponent {
       this.tllcVideoButtonsIndex[videoButton.id] = videoButton;
       videoButton.addEventListener('click', this.__handleVideoControls.bind(this));
     }
-    if (detectionData.isMobile) {
+    if (!detectionData.isDesktop) {
       this.requestFullscreenButton.addEventListener('click', this.__handleFullScreen.bind(this));
     }
   }
@@ -54,7 +55,6 @@ class VideoComponent {
     if (video) {
       video.addEventListener('play', (evt) => {
         DeviceActions.videoPlayed();
-        console.log('video ', video);
       });
       video.addEventListener('ended', (evt) => {
         this.__resetVideoState(video.id);
@@ -80,6 +80,9 @@ class VideoComponent {
         button = this.tllcVideoButtonsIndex[id],
         figureElement = this.tllcVideoContainersIndex[id];
     figureElement.classList.remove('translationllc__video__container--work-video-hidden');
+    if (this.isBigIpad) {
+      figureElement.classList.remove('translationllc__video__container--big-ipad');
+    }
     button.style.display = 'block';
     video.style.opacity = 0;
     if (!this.isDesktop && !this.isSafari) {
@@ -90,13 +93,17 @@ class VideoComponent {
     this.isMobile = detectionData.isMobile;
     this.isDesktop = detectionData.isDesktop;
     this.isSafari = detectionData.isSafari;
+    this.isBigIpad = detectionData.isBigIpad;
     if (!detectionData.isDesktop) {
       if (!this.changeListenerAdded) {
         this.eventBus.addChangeListener('fullscreenChange', this.__handleFullscreenChange.bind(this));
       }
       this.changeListenerAdded = true;
     }
-    this.__bindDOMEvents(detectionData);
+    if (!this.DOMeventsBound) {
+      this.__bindDOMEvents(detectionData);
+      this.DOMeventsBound = true;
+    }
   }
   __handleFullscreenChange() {
     if (!this.__isFullScreen()) {
@@ -141,6 +148,11 @@ class VideoComponent {
     this.currentVideoId = buttonId;
     if (svgOverlay) {
       svgOverlay.style.display = 'none';
+    }
+    if (this.isBigIpad) {
+      video.classList.remove('translationllc__video__container__video--work-video');
+      video.classList.add('translationllc__video__container__video--work-video--big-ipad');
+      figureElement.classList.add('translationllc__video__container--big-ipad');
     }
     if (!this.isDesktop) {
       this.requestFullscreenButton.click();

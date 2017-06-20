@@ -222,15 +222,18 @@ class CarouselComponent {
   __orientationChange(data) {
     this.loadedImages.forEach((image) => {
       if (data.isLandscape) {
-        if (data.isIpad) {
+        if (data.isIpad && !data.isBigIpad) {
           return;
         } else {
           image.classList.remove('translationllc__intro__carousel--height-aspect-ratio');
           image.classList.add('translationllc__intro__carousel--ipad');
         }
-      } else if (data.orientation === 0 && !this.detectionData.isIpad){
+      } else if (data.orientation === 0 && !this.detectionData.isIpad) {
         image.classList.remove('translationllc__intro__carousel--ipad');
         image.classList.add('translationllc__intro__carousel--height-aspect-ratio');
+      } else if (data.orientation === 0 && this.detectionData.isBigIpad) {
+        image.classList.remove('translationllc__intro__carousel--height-aspect-ratio');
+        image.classList.add('translationllc__intro__carousel--ipad');
       }
 
     });
@@ -341,7 +344,14 @@ class CarouselComponent {
         } else {
           this.shuffledIntroUrlsMobile.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         }
-      } else if (detectionData.isIpad || detectionData.isDesktop || detectionData.isLandscape) {
+      } else if (detectionData.isLandscape) {
+        this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopTranslatorUrls, this.desktopImageUrls);
+        if (detectionData.useHeightAspectRatio) {
+          this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
+        } else {
+          this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', 'fixWidth'));
+        }
+      } else if (detectionData.isIpad || detectionData.isDesktop) {
         this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopTranslatorUrls, this.desktopImageUrls);
         if (detectionData.useHeightAspectRatio) {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));

@@ -16,6 +16,13 @@
 .translationllc__video__container--work-video-hidden {
   background-image: none !important;
 }
+.translationllc__video__container--big-ipad {
+  width: 80%;
+  margin: auto;
+}
+.translationllc__video__container__video--work-video--big-ipad {
+  height: 450px;
+}
 .translationllc__video__container--work-video--one {
   background-image: url(../assets/KP_NBA_mobile.jpg);
 }
