@@ -7,7 +7,6 @@ class KeydownDetectionComponent {
     document.addEventListener('keydown', this.__handleKeydown.bind(this), true);
   }
   __handleKeydown(evt) {
-    console.log('keydown ', evt);
     DeviceActions.keydown(evt.keyCode);
   }
 }
