@@ -96,7 +96,6 @@ class InitComponent {
     this.eventBus.addChangeListener('keydown', this.__handleKeydown.bind(this));
   }
   __handleKeydown(keycode) {
-    console.log('keycode ', keycode);
     if (keycode === 38 || keycode === 40) {
       this.__animationScrollHandler();
     }
