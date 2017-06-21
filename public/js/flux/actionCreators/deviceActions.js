@@ -10,6 +10,9 @@ export const DeviceActions = (() => {
     },
     videoPlayed() {
       dispatcher.receiveAction('video-played');
+    },
+    keydown(keyCode) {
+      dispatcher.receiveAction('keydown', keyCode);
     }
   }
 })();

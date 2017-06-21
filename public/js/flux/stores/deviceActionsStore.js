@@ -12,7 +12,9 @@ class DeviceActionsStore {
       this.eventBus.emitChange('fullscreenChange');
     } else if (action === 'video-played') {
       this.eventBus.emitChange('videoPlayed');
-    } 
+    } else if (action === 'keydown') {
+      this.eventBus.emitChange('keydown', data);
+    }
   }
 }
 const deviceActionsStore = new DeviceActionsStore();

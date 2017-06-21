@@ -34,7 +34,6 @@ class InitComponent {
     this.introSectionNav = document.getElementById('introSectionNav');
     this.carouselDesktopWrapper = document.getElementById('carouselDesktopWrapper');
     this.backgroundParallaxOnePlaceholder = document.getElementById('backgroundParallaxOnePlaceholder');
-    this.introSectionNav.addEventListener(window.clickevent, this.__navigateToIntroSection.bind(this));
     this.translationllcMainHash = document.getElementById('translationllcMain');
     this.translationllcWeAreCulturalCatalysts = document.getElementById('translationllcWeAreCulturalCatalysts');
     this.translationllcWeAreTranslation = document.getElementById('translationllcWeAreTranslation');
@@ -42,48 +41,6 @@ class InitComponent {
   }
   __currentPosition() {
     return window.pageYOffset;
-  }
-  __navigateToIntroSection(evt) {
-    window.location.hash = 'top';
-    let startY = this.__currentPosition(),
-        stopY = this.__elmYPosition(this.translationllcMainHash),
-        distance = stopY >  startY ? stopY - startY : startY - stopY,
-        speed,
-        step,
-        leapY,
-        timer,
-        i,
-        j;
-    if (distance < 100) {
-      window.scrollTo(0, stopY);
-    }
-    speed = Math.round(distance / 10000);
-    if (speed >= 20) speed = 20;
-    step = Math.round(distance / 100);
-    leapY = stopY > startY ? startY + step : startY  - step;
-    timer = 0;
-    if (stopY > startY) {
-      for (i = startY; i < stopY; i += step) {
-        setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
-        leapY += step;
-        if (leapY > stopY) {
-          leapY = stopY;
-          timer++;
-        }
-        return;
-      }
-    }
-    for (j = startY; j > stopY; j -= step) {
-      setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
-      leapY -= step;
-      if (leapY < stopY) {
-        leapY -= step;
-        if (leapY < stopY) {
-          leapY = stopY;
-          timer++;
-        }
-      }
-    }
   }
   __showIntro(detectionData) {
     if (detectionData.isDesktop) {
@@ -115,12 +72,6 @@ class InitComponent {
       this.translationllcWeAreTranslation.style.height = `${Math.floor(Math.ceil(window.innerHeight / 2 + 100 - 44) * .6)}px`;
       this.translationllcWeAreTranslation.style.top = '50%';
       this.translationllcWeAreTranslation.transform = 'translateY(-50%)';
-
-      // this.animationPlusIconResolve.style.height = `${Math.ceil(window.innerHeight / 4)}px`;
-      // this.translationllcWeAreTranslation.style.height = `${Math.ceil(window.innerHeight / 2 + 100 - 44)}px`;
-      // this.translationllcWeAreCulturalCatalysts.style.height = `${(window.innerHeight - 50) / 2}px`;
-      // this.translationllcCulturalCatalysts.style.height = `${Math.ceil(window.innerHeight / 4 + 100 - 44)}px`;
-      // this.backgroundParallaxOnePlaceholder.style.height = `${Math.ceil(window.innerHeight / 4 + 100 - 44)}px`;
     } else if (Math.abs(detectionData.orientation) === 90) {
       this.animationPlusIcon.style.height = '100%';
       this.animationPlusIcon.style.width = '40%';
@@ -142,6 +93,13 @@ class InitComponent {
     this.animationScrollHandler = this.__animationScrollHandler.bind(this);
     this.eventBus.addChangeListener('signalTouchmove', this.animationScrollHandler);
     this.eventBus.addChangeListener('signalDetection', this.__detection.bind(this));
+    this.eventBus.addChangeListener('keydown', this.__handleKeydown.bind(this));
+  }
+  __handleKeydown(keycode) {
+    console.log('keycode ', keycode);
+    if (keycode === 38 || keycode === 40) {
+      this.__animationScrollHandler();
+    }
   }
   __animationScrollHandler(data) {
     if (!this.initialScroll) {
@@ -171,18 +129,10 @@ class InitComponent {
         this.eventBus.removeChangeListener('signalTouchmove', this.animationScrollHandler);
         WindowActions.endAnimation();
         window.setTimeout(() => {
-          // window.scrollTo(0, 0);
-          // this.resolveElement.style.opacity = 1;
-        });
-        window.setTimeout(() => {
           this.navElement.style.top = '-110px';
           if (this.isSafari) {
             this.htmlElement.style.overflow = null;
           }
-          // this.resolveElement.style.opacity = 0;
-          // this.mainElement.style.top = '120px';
-          // this.mainElement.style.position = 'relative';
-          // this.mainElement.style.background = 'black';
         });
         window.setTimeout(() => {
           this.body.style.touchAction = 'auto';
@@ -190,7 +140,6 @@ class InitComponent {
           this.navElement.style.top = 0;
           this.mainElement.style.opacity = 1;
           window.scrollTo(0, 0);
-          // window.scrollTo(0, 0);
         });
       }
     }

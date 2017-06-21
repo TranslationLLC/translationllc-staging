@@ -1,6 +1,7 @@
 import { deviceActionsStore } from '../flux/stores/deviceActionsStore'
 import { windowsActionsStore } from '../flux/stores/windowActionsStore'
 import { clickEventComponent } from '../components/clickEventComponent'
+import { keydownDetectionComponent } from '../components/keydownDetectionComponent';
 import { initComponent } from '../components/initComponent'
 import { deviceOrientationComponent } from '../components/deviceOrientationComponent'
 import { preserveAspectRatioComponent } from '../components/preserveAspectRatioComponent'
