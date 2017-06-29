@@ -1,8 +1,11 @@
 .translationllc__section-icon--words-only {
   height: 380px;
 }
-.translationllc__section-icon__words--majors-minors {
-  width: 50%;
+.translationllc__section-icon__words--container {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
 }
 .translationllc__section-icon__svg {
   width: 50%;
@@ -19,9 +22,6 @@
   right: 0;
   transform: translateY(-50%);
 }
-.translationllc__section-icon__words--culture {
-  width: 40%;
-}
 .translationllc__section-icon__words--work-that-works {
   width: 58%;
 }
@@ -33,5 +33,23 @@
   margin: auto;
   left: 0;
   right: 0;
+  font-size: 18px;
+}
+.translationllc__main__culture__section-icon__copy-container {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+.translationllc__main__culture__section-icon__copy-container--majors-minors {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.translationllc__section-icon__copy--container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
   font-size: 18px;
 }
