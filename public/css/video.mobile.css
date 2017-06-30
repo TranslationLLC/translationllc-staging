@@ -93,6 +93,10 @@ tllcvideo {
   position: relative;
   z-index: 3 !important;
 }
+.translationllc__video__container--intro{
+  z-index: 3 !important;
+  position: relative;
+}
 .translationllc__video__container__overlay--intro {
   position: absolute;
   width: 200px;
