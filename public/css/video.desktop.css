@@ -64,6 +64,9 @@
 .translationllc__video__container__overlay--intro {
   width: 840px;
 }
+.translationllc__video__container--feature-video {
+  background-image: url(../assets/sizzle_desktop.jpg);
+}
 .translationllc__video__container--work-video--one {
   background-image: url(../assets/KP_NBA_desktop.jpg);
 }
@@ -87,4 +90,7 @@
 }
 .translationllc__video__container--work-video--eight {
   background-image: url(../assets/Champs_Khaled_desktop.jpg);
+}
+.translationllc__video__container--biggiebreakfast {
+  background-image: url(../assets/biggiebreakfast_desktop.jpg);
 }

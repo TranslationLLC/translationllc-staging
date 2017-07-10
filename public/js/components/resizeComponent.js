@@ -12,7 +12,6 @@ class ResizeComponent {
     let debouncedRequestAnimationFrame = debounce(window.requestAnimationFrame, 500);
     window.addEventListener('resize', (evt) => {
       debouncedRequestAnimationFrame(() => {
-        console.log('resize');
         WindowActions.resize(evt);
       });
     });

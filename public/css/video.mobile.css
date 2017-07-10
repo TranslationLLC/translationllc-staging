@@ -23,6 +23,9 @@
 .translationllc__video__container__video--work-video--big-ipad {
   height: 450px;
 }
+.translationllc__video__container--feature-video {
+  background-image: url(../assets/sizzle_mobile.jpg);
+}
 .translationllc__video__container--work-video--one {
   background-image: url(../assets/KP_NBA_mobile.jpg);
 }
@@ -49,6 +52,9 @@
 }
 .translationllc__video__container--work-video--nine {
   background-image: url(../assets/30_Shaq_Still003.jpg);
+}
+.translationllc__video__container--biggiebreakfast {
+  background-image: url(../assets/biggiebreakfast_mobile.jpg);
 }
 .translationllc__video__container__video--work-video {
   width: 100%;
