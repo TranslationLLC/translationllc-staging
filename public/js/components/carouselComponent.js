@@ -77,12 +77,10 @@ class CarouselComponent {
       'sandi-minor.jpg',
       'Artist_Muralist_mobile_1.jpg',
       'Craig_Drummer_mobile.jpg',
-      'carolina_basketball_minor.jpg',
       'record-producer-minor.jpg',
       'urban-explorer-minor.jpg',
       'photographer-minor.jpg',
       'jeremy_electric_guitar_mobile.jpg',
-      'edwin_magfed_paintball_mobile.jpg',
       'nichelle_poetry_mobile.jpg',
       'karl_dancing_mobile.jpg',
       'jared_youth_mentor_mobile.jpg',
@@ -97,12 +95,10 @@ class CarouselComponent {
       'Yogi',
       'Artist & Muralist',
       'Drummer',
-      'Carolina Basketball',
       'Record Producer',
       'Urban Explorer',
       'Photographer',
       'Bass',
-      'Magfed Paintball',
       'Poetry',
       'Dancer',
       'Youth Mentor',
@@ -117,12 +113,10 @@ class CarouselComponent {
       'sandi-minor-desktop.jpg',
       'luis-minor-desktop.jpg',
       'craig_drummer.jpg',
-      'carolina-basketball-minor-desktop.jpg',
       'record-producer-minor-desktop.jpg',
       'urban-explorer-minor-desktop.jpg',
       'photographer-minor-desktop.jpg',
       'jeremy_upright_electric_guitar_desktop.jpg',
-      'edwin_magfed_paintball.jpg',
       'nichelle_poetry_desktop.jpg',
       'karl_dancer_desktop.jpg',
       'jared_youth_mentor_desktop.jpg',
@@ -189,8 +183,6 @@ class CarouselComponent {
     this.eventBus = EventBus.getInstance();
     this.eventBus.addChangeListener('endAnimation', this.__endAnimation.bind(this));
     this.eventBus.addChangeListener('signalDetection', this.__detection.bind(this));
-    // this.eventBus.addChangeListener('orientationChange', this.__orientationChange.bind(this));
-    // this.eventBus.addChangeListener('resize', this.__resize.bind(this));
   }
   __initiateCarousel(detectionData) {
     this.__createAnimationInterval('intro', detectionData, this.minorsCarousel, this.shuffledIntroUrlsMobile || this.shuffledIntroUrlsDesktop);

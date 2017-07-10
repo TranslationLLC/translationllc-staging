@@ -31,10 +31,6 @@ class GradientParallaxComponent {
   __detect(detectionData) {
     if (!this.currentOrientation) {
       this.currentOrientation = detectionData.isLandscape;
-    } else {
-      if (this.currentOrientation !== detectionData.isLandscape) {
-        // this.__setGradientPosition();
-      }
     }
     this.isMobile = detectionData.isMobile;
     this.isBigIpad = detectionData.isBigIpad;
@@ -70,14 +66,12 @@ class GradientParallaxComponent {
         } else {
           if (rect.top < 0) {
             this.backgroundParallaxOne.style.opacity = '0';
-            // this.backgroundParallaxOne.style.zIndex = 2;
           } else {
             if (!this.videoPlayed) {
               this.backgroundParallaxOne.style.opacity = '1';
             } else {
               this.videoPlayed = false;
             }
-            // this.backgroundParallaxOne.style.zIndex = 3;
           }
         }
       } else {

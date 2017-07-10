@@ -1,9 +1,9 @@
 // ripped from http://stackoverflow.com/questions/15084675/how-to-implement-swipe-gestures-for-mobile-devices
 export function detectSwipe(el,func) {
-  var swipe_det = new Object();
+  let swipe_det = {},
+      direc = "",
+      horizontalSwipeDifference;
   swipe_det.sX = 0; swipe_det.sY = 0; swipe_det.eX = 0; swipe_det.eY = 0;
-  var direc = "";
-  let horizontalSwipeDifference;
   el.addEventListener('touchstart',function(e){
     var t = e.touches[0];
     swipe_det.sX = t.screenX;

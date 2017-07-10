@@ -48,14 +48,14 @@ class NavComponent {
     } else {
       if (this.previousScroll > data.lastKnownScrollPosition) {
         if (window.location.hash !== this.previousHash) {
-          this.navMenu.style.top = '-150px';
+          this.navMenu.style.top = '-170px';
           this.previousHash = window.location.hash;
         } else {
           this.navMenu.style.top = 0;
         }
       } else {
         if (data.lastKnownScrollPosition > 500) {
-          this.navMenu.style.top = '-150px';
+          this.navMenu.style.top = '-170px';
         }
       }
     }

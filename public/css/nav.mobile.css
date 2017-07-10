@@ -9,10 +9,9 @@
   height: 50px;
 }
 .translationllc__nav {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
   position: relative;
   top: 50%;
   transform: translateY(-50%);

@@ -6,6 +6,14 @@
   box-sizing: border-box;
   z-index: 3;
 }
+.translationllc__section-icon--news {
+  background-image: url(../assets/news1.svg);
+  background-position: center;
+}
+.translationllc__section-icon--work {
+  background-image: url(../assets/work.svg);
+  background-position: center;
+}
 .translationllc__section-icon__words {
   position: absolute;
   top: 50%;
@@ -21,12 +29,19 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.translationllc__section-icon__words--work-that-works {
-  width: 70%;
+.translationllc__section-icon--contains-copy {
+  padding-bottom: 1.25rem;
 }
-.translationllc__section-icon__words--majors-minors {
-  width: 70%;
+.translationllc__section-icon--culture {
+  height: 340px;
+  background-image: url(../assets/culture.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.translationllc__section-icon__words--emcee {
-  width: 70%;
+.translationllc__section-icon--majors-minors {
+  height: 340px;
+  background-image: url(../assets/majorsminors.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

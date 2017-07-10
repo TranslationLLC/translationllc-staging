@@ -22,8 +22,8 @@
   right: 0;
   transform: translateY(-50%);
 }
-.translationllc__section-icon__words--work-that-works {
-  width: 58%;
+.translationllc__section-icon--contains-copy {
+  padding-bottom: 10rem;
 }
 .translationllc__section-icon__copy {
   position: absolute;
@@ -35,20 +35,8 @@
   right: 0;
   font-size: 18px;
 }
-.translationllc__main__culture__section-icon__copy-container {
-  position: relative;
-  width: 60%;
-  margin: auto;
-}
-.translationllc__main__culture__section-icon__copy-container--majors-minors {
-  position: relative;
-  width: 60%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .translationllc__section-icon__copy--container {
-  width: 90%;
+  width: 50%;
   margin: auto;
   text-align: center;
   font-size: 18px;

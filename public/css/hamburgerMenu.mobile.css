@@ -1,0 +1,26 @@
+.translationllc__nav__hamburger-toggle {
+  height: 30px;
+  width: 30px;
+  background: white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 1.25rem;
+}
+.translationllc__nav__hamburger-dropdown {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  position: absolute;
+  top: 40px;
+  padding: 10px 0 1.25rem 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.translationllc__nav__hamburger-dropdown--inactive {
+  left: -960px;
+  transition: .25s left ease-in;
+}
+.translationllc__nav__hamburger-dropdown--active {
+  left: 0;
+  transition: .25s left ease-out;
+}

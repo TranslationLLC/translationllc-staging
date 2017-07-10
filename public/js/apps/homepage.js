@@ -9,6 +9,7 @@ import { gradientParallaxComponent } from '../components/gradientParallaxCompone
 import { navComponent } from '../components/navComponent'
 import { windowScrollComponent } from '../components/windowScrollComponent'
 import { carouselComponent } from '../components/carouselComponent'
+// import { hamburgerMenuComponent } from '../components/hamburgerMenuComponent'
 import { videoComponent } from '../components/videoComponent'
 import { safariComponent } from '../components/safariComponent'
 import { resizeComponent } from '../components/resizeComponent'
