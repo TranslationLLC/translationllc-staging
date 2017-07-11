@@ -7,7 +7,7 @@
   z-index: 3;
 }
 .translationllc__section-icon--news {
-  background-image: url(../assets/news1.svg);
+  background-image: url(../assets/news.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,13 +38,13 @@
 }
 .translationllc__section-icon--culture {
   height: 340px;
-  background-image: url(../assets/culture1.svg);
+  background-image: url(../assets/culture.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .translationllc__section-icon--majors-minors {
   height: 340px;
-  background-image: url(../assets/majorsminors.svg);
+  background-image: url(../assets/majorminors.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
