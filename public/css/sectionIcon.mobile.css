@@ -9,10 +9,14 @@
 .translationllc__section-icon--news {
   background-image: url(../assets/news1.svg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .translationllc__section-icon--work {
   background-image: url(../assets/work.svg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .translationllc__section-icon__words {
   position: absolute;
@@ -34,7 +38,7 @@
 }
 .translationllc__section-icon--culture {
   height: 340px;
-  background-image: url(../assets/culture.svg);
+  background-image: url(../assets/culture1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
