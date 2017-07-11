@@ -14,6 +14,8 @@
   display: flex;
   position: relative;
   top: 50%;
+  display: flex;
+  justify-content: space-around;
   transform: translateY(-50%);
 }
 .translationllc__nav__nav-item:first-child {
