@@ -19,12 +19,7 @@ class CarouselComponent {
     this.shuffledIntroUrlsDesktop;
     this.loadedImages = [];
     this.mobileTranslatorUrls = [
-      '1_mobile.jpg',
-      '2_mobile.jpg',
-      '3_mobile.jpg',
-      '4_mobile.jpg',
-      '5_mobile.jpg',
-      'WORK_MOBILE[3].jpg'
+
     ];
     this.mobileImageUrls = [
       'WORK_MOBILE[1].jpg',
@@ -58,7 +53,6 @@ class CarouselComponent {
       'Gif_Mobile_17.jpg',
       'Gif_Mobile_18.jpg',
       'Translation_History_alt1_mobile.jpg',
-      'CHAMPS_MOBILE[2].jpg',
       'NBA_MOBILE[3].jpg',
       'DSW_MOBILE[1].jpg',
       'DSW_MOBILE[2].jpg',
@@ -123,12 +117,7 @@ class CarouselComponent {
       'tony_comic_artist_desktop.jpg'
     ];
     this.desktopTranslatorUrls = [
-      '1_desktop.jpg',
-      '2_desktop.jpg',
-      '3_desktop.jpg',
-      '4_desktop.jpg',
-      '5_desktop.jpg',
-      'WORK_DESKTOP[3].jpg'
+
     ];
     this.desktopImageUrls = [
       'gif_desktop_1_low.jpg',
@@ -160,7 +149,6 @@ class CarouselComponent {
       'WORK_DESKTOP[8].jpg',
       'WORK_DESKTOP[9].jpg',
       'WORK_DESKTOP[10].jpg',
-      'CHAMPS_DESKTOP[2].jpg',
       'NBA_DESKTOP[3].jpg',
       'Translation_History_alt1_desktop.jpg',
       'DSW_DESKTOP[1].jpg',
@@ -330,21 +318,21 @@ class CarouselComponent {
     this.imagePromises = [];
     if (carouselType === 'intro') {
       if (!detectionData.isIpad && detectionData.orientation === 0 && !detectionData.isLandscape) {
-        this.shuffledIntroUrlsMobile = shuffleArray(this.mobileTranslatorUrls, this.mobileImageUrls);
+        this.shuffledIntroUrlsMobile = this.mobileImageUrls;
         if (detectionData.isIpad) {
           this.shuffledIntroUrlsMobile.forEach(this.__createImagePromises.bind(this, 'introCarousel', 'fixWidth'));
         } else {
           this.shuffledIntroUrlsMobile.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         }
       } else if (detectionData.isLandscape) {
-        this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopTranslatorUrls, this.desktopImageUrls);
+        this.shuffledIntroUrlsDesktop = this.desktopImageUrls;
         if (detectionData.useHeightAspectRatio) {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         } else {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', 'fixWidth'));
         }
       } else if (detectionData.isIpad || detectionData.isDesktop) {
-        this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopTranslatorUrls, this.desktopImageUrls);
+        this.shuffledIntroUrlsDesktop = this.desktopImageUrls;
         if (detectionData.useHeightAspectRatio) {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         } else {
