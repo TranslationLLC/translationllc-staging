@@ -1,0 +1,48 @@
+.translationllc__header__translation-logo_sermad {
+	display:none;
+}
+
+.translationllc__section-icon {
+	text-align:center;
+	padding-top:1em;
+}
+
+.translationllc__section-icon--work {
+	background-size: 350%;
+	padding-bottom:2em;
+}
+
+.translation__main__video-text-content__header {
+	font-size:1.3em;
+	letter-spacing:0.1em;
+}
+
+.translationllc__section-icon--news {
+	background-size: 230%;
+}
+
+.translationllc__section-icon--culture {
+	background-size: 170%;
+}
+
+.translationllc__section-icon--majors-minors {
+	background-size: 220%;
+}
+
+#cultureSection .offset {
+	margin-top:-100px;
+}
+
+.translationllc__contact-us__container h4 {
+	font-family:'Mark W01 Bold';
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.translationllc__contact-us__container_tel {
+	margin:2em 0 3em 0;
+}
+
+#workSection {
+
+}

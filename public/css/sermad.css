@@ -1,0 +1,159 @@
+.translationllc__header {
+
+}
+
+.translationllc__header__translation-logo {
+  left:3%;
+  top:50%;  
+}
+
+.translationllc__header__translation-logo_sermad {
+	width:12em;
+	margin: 2.5em 0 0 2.5em;
+}
+
+.translationllc__nav {
+	right:1.8em;
+}
+
+.translationllc__nav__work {
+
+}
+.translationllc__nav__culture {
+
+}
+
+.translationllc__main {
+	background:#000000;
+}
+
+.translationllc__video__container__overlay--intro {
+	width:60%;
+	top:15%;
+}
+
+.translationllc__section-icon__copy--container {
+	width:60%;
+	font-size:1.3em;
+	letter-spacing:0.1em;
+}
+
+.translationllc__video__container__overlay__first-block {
+	font-size:1.9em;
+}
+
+.translationllc__video__container__overlay__second-block {
+	font-size:1.9em
+}
+
+h1 {
+	font-family:'Mark W01 Bold';
+	/*font-size: 1.3em;*/
+	/*letter-spacing: 1em;*/
+}
+
+.translationllc__section-icon__copy--container--intro {
+	margin-top: 7em;
+}
+
+
+
+.translationllc__nav {
+	top:3em;
+	font-size:1.1em;
+}
+
+.translationllc__section-icon--work {
+	background-size: 150%;
+}
+
+.translation__main__video-text-content__header {
+	font-size:3em;
+	width:75%;
+	letter-spacing:0.1em;
+}
+
+.translation__main__video-text-content {
+	padding-top:45px;
+	/*font-size:0.1em;*/
+
+}
+
+.translation__main__video-text-content__content {
+	width:75%;
+	font-size:1.4em;
+}
+
+.translationllc__section-icon--news {
+	background-size: 125%;
+}
+
+.translationllc__main__articles__article {
+	padding:0 0 0 0;
+	margin:0 auto 50px auto;
+	width:75%;
+	/*margin:auto;*/
+}
+
+.translationllc__main__articles__article-title-author-container {
+	width:100%;
+}
+
+.translationllc__main__articles__article-publication {
+	font-size:13px;
+	margin:0 0 10px 0;
+}
+
+.translationllc__main__articles__article-link {
+	font-size:2.5em;
+	margin:0 0 0 0;
+	letter-spacing:0.1em;
+}
+
+.translationllc__main__articles__article-author {
+	margin:10px 0 0 0;
+}
+
+.translationllc__section-icon--culture {
+	background-size: 125%;
+}
+
+.translationllc__section-icon {
+	padding: 0 0 0 0;
+	margin: 0 0 100px 0;
+}
+
+.translationllc__section-icon--majors-minors {
+	background-size: 125%;
+}
+
+.translationllc__contact-us {
+	padding:2em;
+}
+
+.translationllc__contact-us__header {
+	font-size:2.8em;
+	letter-spacing:0.1em;
+	margin-bottom:60px;
+}
+
+.translationllc__contact-us__container {
+	font-size:1.6em;
+}
+
+.translationllc__contact-us__container h4 {
+	font-family:'Mark W01 Bold';
+	margin: 0 0 10px 0;
+	padding: 0 0 0 0;
+}
+
+.translationllc__contact-us__container_tel {
+	margin:4em 0 0 0;
+	font-size:1.6em;
+}
+
+.translationllc__contact-us__copyright {
+	margin:40px 0 20px 0;
+	padding:0 0 0 0;
+	font-size:1.1em;
+}
