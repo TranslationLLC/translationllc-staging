@@ -7,16 +7,16 @@
   z-index: 3;
 }
 .translationllc__section-icon--news {
-  background-image: url(../assets/news.svg);
+  background-image: url(../assets/news_trimmed.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: contain;*/
 }
 .translationllc__section-icon--work {
-  background-image: url(../assets/work.svg);
+  background-image: url(../assets/work_graphic_trimmed.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: contain;*/
 }
 .translationllc__section-icon__words {
   position: absolute;
@@ -37,15 +37,16 @@
   padding-bottom: 1.25rem;
 }
 .translationllc__section-icon--culture {
-  height: 340px;
-  background-image: url(../assets/culture.svg);
+  /*height: 340px;*/
+  background-image: url(../assets/culture_trimmed.svg);
   background-repeat: no-repeat;
   background-position: center;
+  /*background-size: contain;*/
 }
 .translationllc__section-icon--majors-minors {
-  height: 340px;
-  background-image: url(../assets/majorminors.svg);
+  /*height: 340px;*/
+  background-image: url(../assets/majorminors_trimmed.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /*background-size: contain;*/
 }

@@ -2,6 +2,10 @@
 
 }
 
+.translationllc__section-icon--contains-copy {
+	padding:0 0 0 0;
+}
+
 .translationllc__header__translation-logo {
   left:3%;
   top:50%;  
@@ -34,21 +38,21 @@
 
 .translationllc__section-icon__copy--container {
 	width:60%;
-	font-size:1.3em;
-	letter-spacing:0.1em;
+	/*font-size:1.3em;
+	letter-spacing:0.1em;*/
 }
 
 .translationllc__video__container__overlay__first-block {
-	font-size:1.9em;
+	/*font-size:1.9em;*/
 }
 
 .translationllc__video__container__overlay__second-block {
-	font-size:1.9em
+	/*font-size:1.9em*/
 }
 
 h1 {
 	font-family:'Mark W01 Bold';
-	/*font-size: 1.3em;*/
+	font-size: 1.3em;
 	/*letter-spacing: 1em;*/
 }
 
@@ -56,36 +60,43 @@ h1 {
 	margin-top: 7em;
 }
 
-
-
 .translationllc__nav {
 	top:3em;
-	font-size:1.1em;
+	/*font-size:1.1em;*/
+}
+
+.translationllc__main__work {
+	margin:200px 0 200px 0;
 }
 
 .translationllc__section-icon--work {
-	background-size: 150%;
-}
-
-.translation__main__video-text-content__header {
-	font-size:3em;
-	width:75%;
-	letter-spacing:0.1em;
+	/*background-size: 150%;*/
+	height:300px;
 }
 
 .translation__main__video-text-content {
-	padding-top:45px;
-	/*font-size:0.1em;*/
+	padding-top:20px;
+	padding-bottom:60px;
+}
 
+.translation__main__video-text-content__header {
+	width:75%;
+	/*letter-spacing:0.1em;
+	font-size:3em;*/
 }
 
 .translation__main__video-text-content__content {
 	width:75%;
-	font-size:1.4em;
+	/*font-size:1.4em;*/
 }
 
 .translationllc__section-icon--news {
-	background-size: 125%;
+	/*background-size: 125%;*/
+	height:300px;
+}
+
+.translationllc__main__articles {
+	/*padding-bottom:0;*/
 }
 
 .translationllc__main__articles__article {
@@ -100,22 +111,28 @@ h1 {
 }
 
 .translationllc__main__articles__article-publication {
-	font-size:13px;
+	/*font-size:13px;*/
 	margin:0 0 10px 0;
 }
 
 .translationllc__main__articles__article-link {
-	font-size:2.5em;
+	/*font-size:2.5em;*/
+	/*letter-spacing:0.1em;*/
 	margin:0 0 0 0;
-	letter-spacing:0.1em;
 }
 
 .translationllc__main__articles__article-author {
 	margin:10px 0 0 0;
 }
 
+#cultureSection {
+	margin: 100px 0 0 0;
+}
+
 .translationllc__section-icon--culture {
-	background-size: 125%;
+	background-size: 75%;
+	height:125px;
+	margin:0px 0px 100px 0px;
 }
 
 .translationllc__section-icon {
@@ -124,7 +141,9 @@ h1 {
 }
 
 .translationllc__section-icon--majors-minors {
-	background-size: 125%;
+	background-size: 75%;
+	height:300px;
+	margin:100px 0 100px 0;
 }
 
 .translationllc__contact-us {
@@ -132,13 +151,13 @@ h1 {
 }
 
 .translationllc__contact-us__header {
-	font-size:2.8em;
-	letter-spacing:0.1em;
+	/*font-size:2.8em;*/
+	/*letter-spacing:0.1em;*/
 	margin-bottom:60px;
 }
 
 .translationllc__contact-us__container {
-	font-size:1.6em;
+	/*font-size:1.6em;*/
 }
 
 .translationllc__contact-us__container h4 {
@@ -149,11 +168,11 @@ h1 {
 
 .translationllc__contact-us__container_tel {
 	margin:4em 0 0 0;
-	font-size:1.6em;
+	/*font-size:1.6em;*/
 }
 
 .translationllc__contact-us__copyright {
 	margin:40px 0 20px 0;
 	padding:0 0 0 0;
-	font-size:1.1em;
+	/*font-size:1.1em;*/
 }

@@ -7,9 +7,22 @@
 	padding-top:1em;
 }
 
+#workSection {
+
+}
+
+#sizzleVideo {
+
+}
+
+.translationllc__section-icon__copy--container translationllc__section-icon__copy--container--intro {
+
+}
+
 .translationllc__section-icon--work {
-	background-size: 350%;
-	padding-bottom:2em;
+	background-size: 40%;
+	height:400px;
+	/*padding-bottom:2em;*/
 }
 
 .translation__main__video-text-content__header {
@@ -18,15 +31,18 @@
 }
 
 .translationllc__section-icon--news {
-	background-size: 230%;
+	background-size: 60%;
+	height:400px;
 }
 
 .translationllc__section-icon--culture {
-	background-size: 170%;
+	background-size: 80%;
+	height:400px;
 }
 
 .translationllc__section-icon--majors-minors {
-	background-size: 220%;
+	background-size: 80%;
+	height:400px;
 }
 
 #cultureSection .offset {

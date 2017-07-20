@@ -65,7 +65,7 @@ class CarouselComponent {
     this.minorsMobileImageUrls = [
       'barri-minor.jpg',
       'Emcee_Mobile.jpg',
-      'able-minor.jpg',
+
       'carissa-minor.jpg',
       'meryl-minor.jpg',
       'sandi-minor.jpg',
@@ -83,7 +83,7 @@ class CarouselComponent {
     this.minorsMonikers = [
       'Brazilianist',
       'Emcee',
-      'Collage Artist',
+
       'Sculptor',
       'Activist',
       'Yogi',
@@ -101,7 +101,7 @@ class CarouselComponent {
     this.minorsDesktopImageUrls = [
       'barri-minor-desktop.jpg',
       'joel-minor-desktop.jpg',
-      'able-minor-desktop.jpg',
+
       'carissa-minor-desktop.jpg',
       'meryl-minor-desktop.jpg',
       'sandi-minor-desktop.jpg',
