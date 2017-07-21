@@ -1,3 +1,12 @@
+html {
+	font-size:18px;
+	/*letter-spacing:.1em;*/
+}
+
+h1, h2, h3, h4 {
+	1em;
+}
+
 .translationllc__header {
 
 }
@@ -12,12 +21,14 @@
 }
 
 .translationllc__header__translation-logo_sermad {
-	width:12em;
-	margin: 2.5em 0 0 2.5em;
+	width:195px;
+	margin: 2.2em 0 0 2.2em;
 }
 
 .translationllc__nav {
 	right:1.8em;
+	top:2.8em;
+	font-size:0.81em;
 }
 
 .translationllc__nav__work {
@@ -32,14 +43,18 @@
 }
 
 .translationllc__video__container__overlay--intro {
-	width:60%;
+	max-width:50%;
+	min-width:50%;
 	top:15%;
+	margin: auto;
+    /*border: 3px solid #73AD21;*/
 }
 
 .translationllc__section-icon__copy--container {
-	width:60%;
-	/*font-size:1.3em;
-	letter-spacing:0.1em;*/
+	width:63%;
+	/*border:1px solid #red;*/
+	/*font-size:1.3em;*/
+	/*letter-spacing:0.1em;*/
 }
 
 .translationllc__video__container__overlay__first-block {
@@ -52,42 +67,48 @@
 
 h1 {
 	font-family:'Mark W01 Bold';
-	font-size: 1.3em;
-	/*letter-spacing: 1em;*/
+	font-size: 2em;
+	letter-spacing: 0.108em;
 }
 
 .translationllc__section-icon__copy--container--intro {
 	margin-top: 7em;
+	width:64%;
 }
 
 .translationllc__nav {
-	top:3em;
+
 	/*font-size:1.1em;*/
 }
 
 .translationllc__main__work {
-	margin:200px 0 200px 0;
+	margin:200px 0 130px 0;
 }
 
 .translationllc__section-icon--work {
 	/*background-size: 150%;*/
-	height:300px;
+	height:288px;
 }
 
 .translation__main__video-text-content {
+	text-align:center;
 	padding-top:20px;
-	padding-bottom:60px;
+	padding-bottom:70px;
 }
 
 .translation__main__video-text-content__header {
-	width:75%;
-	/*letter-spacing:0.1em;
-	font-size:3em;*/
+	width:64%;
+	margin-top:0.5em;
+	letter-spacing:0.07em;
+	margin-bottom:5px;
+
+	/*font-size:3em;*/
 }
 
 .translation__main__video-text-content__content {
-	width:75%;
-	/*font-size:1.4em;*/
+	width:64%;
+	font-size:0.7em;
+	line-height:1.2em;
 }
 
 .translationllc__section-icon--news {
@@ -100,64 +121,74 @@ h1 {
 }
 
 .translationllc__main__articles__article {
-	padding:0 0 0 0;
-	margin:0 auto 50px auto;
-	width:75%;
+	padding:9px 0 0 0;
+	margin:0 auto 45px auto;
+	width:64%;
+	color:#a6a6a6;
+	/*border:1px solid red;*/
 	/*margin:auto;*/
 }
 
 .translationllc__main__articles__article-title-author-container {
 	width:100%;
+	font-size:1.3em;
 }
 
 .translationllc__main__articles__article-publication {
-	/*font-size:13px;*/
+	font-size:0.72em;
 	margin:0 0 10px 0;
 }
 
 .translationllc__main__articles__article-link {
-	/*font-size:2.5em;*/
-	/*letter-spacing:0.1em;*/
+	font-size:1em;
+	letter-spacing:0.004em;
 	margin:0 0 0 0;
 }
 
 .translationllc__main__articles__article-author {
 	margin:10px 0 0 0;
+	font-size:0.55em;
+	color:#a6a6a6;
+	letter-spacing:0.03em;
 }
 
 #cultureSection {
-	margin: 100px 0 0 0;
+	margin: 155px 0 0 0;
 }
 
 .translationllc__section-icon--culture {
-	background-size: 75%;
-	height:125px;
-	margin:0px 0px 100px 0px;
+	background-size: 820px;
+	height:200px;
+	margin:0px 0px 150px 0px;
+}
+
+.translationllc__video__container--biggiebreakfast {
+	margin:-112px 0px 0px 0px;
 }
 
 .translationllc__section-icon {
 	padding: 0 0 0 0;
-	margin: 0 0 100px 0;
+	margin: 0 0 190px 0; /* math */
 }
 
 .translationllc__section-icon--majors-minors {
-	background-size: 75%;
-	height:300px;
-	margin:100px 0 100px 0;
+	background-size: 600px;
+	height:540px;
+	margin:0px 0 55px 0;
 }
 
 .translationllc__contact-us {
-	padding:2em;
+	padding-left:10.5em;
 }
 
 .translationllc__contact-us__header {
-	/*font-size:2.8em;*/
+	font-size:1.1em;
 	/*letter-spacing:0.1em;*/
 	margin-bottom:60px;
 }
 
 .translationllc__contact-us__container {
-	/*font-size:1.6em;*/
+	font-size:0.9em;
 }
 
 .translationllc__contact-us__container h4 {
@@ -168,11 +199,30 @@ h1 {
 
 .translationllc__contact-us__container_tel {
 	margin:4em 0 0 0;
-	/*font-size:1.6em;*/
+	font-size:0.9em;
 }
 
 .translationllc__contact-us__copyright {
 	margin:40px 0 20px 0;
 	padding:0 0 0 0;
-	/*font-size:1.1em;*/
+	font-size:0.6em;
+}
+
+.translationllc__main__articles {
+	padding:0;
+}
+
+#minorsCarousel {
+	margin:-90px 0 0 0;
+}
+
+.translationllc__contact-us__two-column-container__column {
+	font-size:0.9em;
+}
+
+#sizzleVideo {
+	/*margin-top:25px;*/
+}
+
+.translationllc__section-icon translationllc__section-icon--work {
 }

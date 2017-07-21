@@ -5,21 +5,23 @@
   margin-left: 20%;
 }
 .translationllc__main__articles__article-publication {
-  font-size: 14px;
+  /*font-size: 14px;*/
   margin-bottom: 15px;
 }
 .translationllc__main__articles__news {
-  font-size: 40px;
+  /*font-size: 40px;*/
 }
 .translationllc__main__articles__article--news {
   margin-left: 20%;
 }
 .translationllc__main__articles__article-link{
-  font-size: 26px;
+  
+  /*font-size: 26px;*/
+  
   margin-bottom: 15px;
 }
 .translationllc__main__articles__article-author {
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 .translationllc__main__articles__article-title-author-container {
   width: 60%;

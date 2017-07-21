@@ -135,10 +135,12 @@ video {
 }
 .translation__main__video-text-content__header {
   margin-bottom: 5px;
-  font-size: 18px;
+  /*font-size: 18px;*/
 }
 .translation__main__video-text-content {
-  font-size: 16px;
+  
+  /*font-size: 16px;*/
+  
   width: 100%;
   padding-top: 35px;
   padding-bottom: 60px;
