@@ -309,21 +309,21 @@ class CarouselComponent {
     this.imagePromises = [];
     if (carouselType === 'intro') {
       if (!detectionData.isIpad && detectionData.orientation === 0 && !detectionData.isLandscape) {
-        this.shuffledIntroUrlsMobile = this.mobileImageUrls;
+        this.shuffledIntroUrlsMobile = shuffleArray(this.mobileImageUrls);
         if (detectionData.isIpad) {
           this.shuffledIntroUrlsMobile.forEach(this.__createImagePromises.bind(this, 'introCarousel', 'fixWidth'));
         } else {
           this.shuffledIntroUrlsMobile.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         }
       } else if (detectionData.isLandscape) {
-        this.shuffledIntroUrlsDesktop = this.desktopImageUrls;
+        this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopImageUrls);
         if (detectionData.useHeightAspectRatio) {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         } else {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', 'fixWidth'));
         }
       } else if (detectionData.isIpad || detectionData.isDesktop) {
-        this.shuffledIntroUrlsDesktop = this.desktopImageUrls;
+        this.shuffledIntroUrlsDesktop = shuffleArray(this.desktopImageUrls);
         if (detectionData.useHeightAspectRatio) {
           this.shuffledIntroUrlsDesktop.forEach(this.__createImagePromises.bind(this, 'introCarousel', null));
         } else {

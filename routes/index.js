@@ -6,7 +6,6 @@ var keystone = require('keystone'),
       views: importRoutes('./views'),
       api: importRoutes('./api')
     };
-console.log('pwd ', process.cwd());
 keystone.pre('routes', favicon(process.cwd() + '/public/assets/favicon.ico'));
 
 module.exports = function(app) {
