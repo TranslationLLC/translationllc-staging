@@ -79,21 +79,13 @@ class InitComponent {
       this.translationllcWeAreTranslation.style.top = '40%';
     }
   }
-  __elmYPosition(element) {
-    let y = element.offsetTop,
-        node = element;
-    while (node.offsetParent && node.offsetParent != document.body) {
-      node = node.offsetParent;
-      y += node.offsetTop;
-    }
-    return y;
-  }
   __bindFlux() {
     this.eventBus = EventBus.getInstance();
     this.animationScrollHandler = this.__animationScrollHandler.bind(this);
+    this.handleKeydownHandler = this.__handleKeydown.bind(this);
     this.eventBus.addChangeListener('signalTouchmove', this.animationScrollHandler);
     this.eventBus.addChangeListener('signalDetection', this.__detection.bind(this));
-    this.eventBus.addChangeListener('keydown', this.__handleKeydown.bind(this));
+    this.eventBus.addChangeListener('keydown', this.handleKeydownHandler);
   }
   __handleKeydown(keycode) {
     if (keycode === 38 || keycode === 40) {
@@ -124,6 +116,9 @@ class InitComponent {
         // this.navElement.style.opacity = 1;
         if (this.animationScrollHandlerDesktop) {
           this.eventBus.removeChangeListener('signalScroll', this.animationScrollHandlerDesktop);
+        }
+        if (this.handleKeydownHandler) {
+          this.eventBus.removeChangeListener('keydown', this.handleKeydownHandler);
         }
         this.eventBus.removeChangeListener('signalTouchmove', this.animationScrollHandler);
         WindowActions.endAnimation();

@@ -6,20 +6,15 @@
   background-image: url(../assets/translation-desktop-header.jpg);
 }
 .translation__main__video-text-content__header {
-  
   width: 58%;
   margin: auto;
   margin-bottom: 15px;
-  
-  /*font-size: 26px;*/
-  /*letter-spacing: 2px;*/
 }
 .translation__main__video-text-content__content {
   width: 58%;
   margin: auto;
 }
 .translation__main__video-text-content {
-  /*font-size: 14px;*/
   width: 100%;
   padding-top: 110px;
   padding-bottom: 110px;
@@ -33,12 +28,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  
   position: absolute;
-  
-  /*font-size: 30px;*/
-  /*letter-spacing: 4px;*/
-  /*font-size: 32px;*/
 }
 
 .translationllc__video__container__overlay__second-block {
@@ -46,13 +36,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  
   position: absolute;
-  
-  /*font-size: 30px;*/
-  /*font-size: 32px;*/
-  /*letter-spacing: 4px;*/
-  
   bottom: 0;
   text-align: left;
   flex-direction: row;

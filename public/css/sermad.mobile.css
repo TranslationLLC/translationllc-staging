@@ -100,7 +100,7 @@
 	padding-top:4em;
 }
 
-@media screen and (min-width: 414px) and (max-width: 736px) {	
+@media screen and (min-width: 414px) and (max-width: 736px) {
 
 .translationllc__video__container__overlay__first-block {
 	font-size:13px;
@@ -115,7 +115,7 @@
 
 }
 
-@media screen and (min-width: 737px) and (max-width: 959px) {	
+@media screen and (min-width: 737px) and (max-width: 959px) {
 
 .translationllc__video__container__overlay__first-block {
 	font-size:20px;

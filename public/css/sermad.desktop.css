@@ -17,7 +17,7 @@ h1, h2, h3, h4 {
 
 .translationllc__header__translation-logo {
   left:3%;
-  top:50%;  
+  top:50%;
 }
 
 .translationllc__header__translation-logo_sermad {
@@ -87,6 +87,7 @@ h1 {
 
 .translationllc__section-icon--work {
 	/*background-size: 150%;*/
+	background-size: contain;
 	height:288px;
 }
 
@@ -112,7 +113,7 @@ h1 {
 }
 
 .translationllc__section-icon--news {
-	/*background-size: 125%;*/
+	background-size: contain;
 	height:300px;
 }
 
