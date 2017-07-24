@@ -119,7 +119,7 @@ class InitComponent {
       this.animationPlusIconDesktop.classList.add('translationllc__intro__background__plus--desktop--active');
       // this.animationPlusIconDesktop.style.transform = `translate3d(0, -50%, 0) scale(${Math.round(this.animationThreshold)})`;
       this.animationPlusIcon.style.top = '50%';
-      this.animationPlusIcon.style.transform = `translateY(-50%) scale(${this.animationScale})`;
+      this.animationPlusIcon.classList.add('translationllc__intro__background__plus--desktop--active');
       window.setTimeout(() => {
         this.introElement.style.display = 'none';
         this.mainElement.style.display = 'block';
@@ -145,7 +145,7 @@ class InitComponent {
         this.navElement.style.top = 0;
         this.mainElement.style.opacity = 1;
         window.scrollTo(0, 0);
-      }, 500);
+      }, 50);
       // if (!this.endAnimation) {
       //   this.animationPlusIconDesktop.style.top = '50%';
       //   this.animationPlusIconDesktop.classList.add('translationllc__intro__background__plus--desktop--active');

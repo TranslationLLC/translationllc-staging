@@ -33,6 +33,7 @@
   left: 0;
   right: 0;
   margin: auto;
+  transform: scale(1);
 }
 .translationllc__intro__background__plus--resolve {
   background-image: url(../assets/PlusIcon.svg);
