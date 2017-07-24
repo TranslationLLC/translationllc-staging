@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     tap = require('gulp-tap'),
     minify = require('gulp-minify'),
     uglify = require('gulp-uglify'),
-    gzip = require ('gulp-gzip'),
+    htmlMinify = require('gulp-htmlmin'),
     exec = require('child_process').exec;
 
 gulp.task('compileMobileCss', function() {
@@ -70,10 +70,11 @@ gulp.task('compileHandlebars', function() {
       data['body'] = file.contents.toString().replace('{{> header}}', data['header']).replace('{{> homepageScripts}}', data['homepageScripts']);
     }
     if (data.body) {
+      // var minifiedHtml = htmlMinify(data.body, {collapseWhitespace: true, removeComments: true});
       return gulp.src('./templates/layouts/main.handlebars')
       .pipe(handlebars(data))
-      .pipe(gzip({
-        append: false
+      .pipe(htmlMinify({
+        collapseWhitespace: true
       }))
       .pipe(rename('index.html'))
       .pipe(gulp.dest('public/dist/html'))
