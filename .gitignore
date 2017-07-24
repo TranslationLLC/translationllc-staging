@@ -4,3 +4,4 @@ public/images/
 public/.DS_Store
 .DS_Store
 public/js/utils/env.js
+package-lock.json
