@@ -23,6 +23,8 @@ h1, h2, h3, h4 {
 .translationllc__header__translation-logo_sermad {
 	width:195px;
 	margin: 2.2em 0 0 2.2em;
+	cursor: pointer;
+	display: block;
 }
 
 .translationllc__nav {

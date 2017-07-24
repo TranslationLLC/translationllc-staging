@@ -14,11 +14,12 @@ class InitComponent {
       window.scrollTo(0, 0);
     });
     window.addEventListener('hashchange', (evt) => {
-      if (window.location.hash === '#top') {
+      if (window.location.hash === '#introSection') {
         this.navElement.style.top = 0;
       }
     });
     this.__setDOMVariables();
+    this.__bindDOMEvents();
     this.__bindFlux();
   }
   __setDOMVariables() {
@@ -38,6 +39,11 @@ class InitComponent {
     this.translationllcWeAreCulturalCatalysts = document.getElementById('translationllcWeAreCulturalCatalysts');
     this.translationllcWeAreTranslation = document.getElementById('translationllcWeAreTranslation');
     this.translationllcCulturalCatalysts = document.getElementById('translationllcCulturalCatalysts');
+  }
+  __bindDOMEvents() {
+    this.introSectionNav.addEventListener(window.clickevent, evt => {
+      window.location.hash = '#introSection';
+    });
   }
   __currentPosition() {
     return window.pageYOffset;
