@@ -33,17 +33,3 @@ keystone.set('nav', {
   'components': ['CarouselComponent', 'SlideComponent', 'VideoComponent', 'ImageTextComponent']
 });
 keystone.start();
-// keystone.start({
-  // onHttpServerCreated: function() {
-  //   keystone.set('io', socket.listen(keystone.httpServer));
-  // },
-  // onStart: function() {
-  //   var io = keystone.get('io');
-  //   io.on('connection', function() {
-  //     console.log('user connected');
-  //   });
-  //   rtm = require('./lib/translationllc_cms_bot/bot.js');
-  //   rtm.start();
-  // }
-// });
-// server.listen(3000);

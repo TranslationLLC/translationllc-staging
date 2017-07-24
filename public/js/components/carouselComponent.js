@@ -18,9 +18,6 @@ class CarouselComponent {
     this.shuffledIntroUrlsMobile;
     this.shuffledIntroUrlsDesktop;
     this.loadedImages = [];
-    this.mobileTranslatorUrls = [
-
-    ];
     this.mobileImageUrls = [
       'WORK_MOBILE[1].jpg',
       'WORK_MOBILE[2].jpg',
@@ -65,7 +62,6 @@ class CarouselComponent {
     this.minorsMobileImageUrls = [
       'barri-minor.jpg',
       'Emcee_Mobile.jpg',
-
       'carissa-minor.jpg',
       'meryl-minor.jpg',
       'sandi-minor.jpg',
@@ -83,7 +79,6 @@ class CarouselComponent {
     this.minorsMonikers = [
       'Brazilianist',
       'Emcee',
-
       'Sculptor',
       'Activist',
       'Yogi',
@@ -101,7 +96,6 @@ class CarouselComponent {
     this.minorsDesktopImageUrls = [
       'barri-minor-desktop.jpg',
       'joel-minor-desktop.jpg',
-
       'carissa-minor-desktop.jpg',
       'meryl-minor-desktop.jpg',
       'sandi-minor-desktop.jpg',
@@ -115,9 +109,6 @@ class CarouselComponent {
       'karl_dancer_desktop.jpg',
       'jared_youth_mentor_desktop.jpg',
       'tony_comic_artist_desktop.jpg'
-    ];
-    this.desktopTranslatorUrls = [
-
     ];
     this.desktopImageUrls = [
       'gif_desktop_1_low.jpg',
