@@ -99,7 +99,7 @@
 }
 .translationllc__intro__background__plus--desktop--active {
   transform: scale(60);
-  transition: all 1s linear;
+  transition: all 0.25s linear;
 }
 .translationllc__intro__carousel--desktop__wrapper {
   height: 350%;

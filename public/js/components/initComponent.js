@@ -138,14 +138,14 @@ class InitComponent {
         if (this.isSafari) {
           this.htmlElement.style.overflow = null;
         }
-      }, 1000);
+      }, 500);
       window.setTimeout(() => {
         this.body.style.touchAction = 'auto';
         this.navElement.style.opacity = 1;
         this.navElement.style.top = 0;
         this.mainElement.style.opacity = 1;
         window.scrollTo(0, 0);
-      }, 1000);
+      }, 500);
       // if (!this.endAnimation) {
       //   this.animationPlusIconDesktop.style.top = '50%';
       //   this.animationPlusIconDesktop.classList.add('translationllc__intro__background__plus--desktop--active');
