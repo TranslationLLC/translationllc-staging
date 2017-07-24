@@ -1,5 +1,4 @@
 var keystone = require('keystone'),
-    awsUrl = process.env.TRANSLATION_HOMEPAGE_S3_URL,
     Homepage = keystone.list('Homepage'),
     BaseComponent = keystone.list('BaseComponent'),
     SlideComponent = keystone.list('SlideComponent');

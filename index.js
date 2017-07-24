@@ -1,6 +1,5 @@
 var keystone = require('keystone'),
     hbs = require('express-handlebars'),
-    socket = require('socket.io'),
     rtm,
     env = require('./public/js/utils/env.js'),
     conditionalIf = require('./lib/handlebarsHelpers/conditionalIf.js'),
