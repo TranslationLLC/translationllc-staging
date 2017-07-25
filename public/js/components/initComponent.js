@@ -1,5 +1,6 @@
 import { EventBus } from '../flux/eventBus'
 import { WindowActions } from '../flux/actionCreators/windowActions'
+let localStorage = window.localStorage;
 class InitComponent {
   constructor() {
     this.__init();
@@ -16,6 +17,9 @@ class InitComponent {
     window.addEventListener('hashchange', (evt) => {
       if (window.location.hash === '#introSection') {
         this.navElement.style.top = 0;
+      }
+      if (window.location.hash) {
+        localStorage.setItem('tllc__lastHash', JSON.stringify({hash: window.location.hash, pos: window.pageYOffset}));
       }
     });
     this.__setDOMVariables();
@@ -43,11 +47,6 @@ class InitComponent {
   __bindDOMEvents() {
     this.introSectionNav.addEventListener(window.clickevent, evt => {
       window.location.hash = '#introSection';
-    });
-    this.navElement.addEventListener(window.clickevent, evt => {
-      if (window.location.hash === evt.target.hash) {
-        console.log('hash match');
-      }
     });
   }
   __currentPosition() {
@@ -117,14 +116,23 @@ class InitComponent {
       }
       this.animationPlusIconDesktop.style.top = '50%';
       this.animationPlusIconDesktop.classList.add('translationllc__intro__background__plus--desktop--active');
-      // this.animationPlusIconDesktop.style.transform = `translate3d(0, -50%, 0) scale(${Math.round(this.animationThreshold)})`;
       this.animationPlusIcon.style.top = '50%';
       this.animationPlusIcon.classList.add('translationllc__intro__background__plus--desktop--active');
       window.setTimeout(() => {
         this.introElement.style.display = 'none';
         this.mainElement.style.display = 'block';
+        let lastHash = false,
+            getLastHash = new Promise((resolve, reject) => {
+              resolve(localStorage.getItem('tllc__lastHash'));
+            });
+            getLastHash.then((lastHash) => {
+              if (lastHash) {
+                lastHash = JSON.parse(lastHash);
+                window.location.hash = lastHash.hash;
+                window.scrollTo(0, parseInt(lastHash.pos));
+              }
+            });
       }, 800);
-      // this.navElement.style.opacity = 1;
       if (this.animationScrollHandlerDesktop) {
         this.eventBus.removeChangeListener('signalScroll', this.animationScrollHandlerDesktop);
       }
@@ -144,30 +152,17 @@ class InitComponent {
         this.navElement.style.opacity = 1;
         this.navElement.style.top = 0;
         this.mainElement.style.opacity = 1;
-        window.scrollTo(0, 0);
-      }, 50);
+      }, 500);
     }
     this.initialScroll = false;
   }
   __detection(data) {
     if (!this.introLoaded) {
-      let localStorage = window.localStorage,
-          introFlag = false,
-          getIntroFlag = new Promise((resolve, reject) => {
-            introFlag = localStorage.getItem('introFlag');
-            resolve(introFlag);
-          });
       this.isMobile = data.isMobile;
       this.isSafari = data.isSafari;
       this.isDesktop = data.isDesktop;
-      getIntroFlag.then((introFlag) => {
-        if (!introFlag) {
-          this.__resizeSvgs(data);
-          this.__showIntro(data);
-        } else {
-          this.__showMain();
-        }
-      });
+      this.__resizeSvgs(data);
+      this.__showIntro(data);
     }
     this.introLoaded = true;
   }
