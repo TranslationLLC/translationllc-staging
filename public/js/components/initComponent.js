@@ -134,7 +134,7 @@ class InitComponent {
       this.eventBus.removeChangeListener('signalTouchmove', this.animationScrollHandler);
       WindowActions.endAnimation();
       window.setTimeout(() => {
-        this.navElement.style.top = '-110px';
+        // this.navElement.style.top = '-110px';
         if (this.isSafari) {
           this.htmlElement.style.overflow = null;
         }
@@ -146,40 +146,6 @@ class InitComponent {
         this.mainElement.style.opacity = 1;
         window.scrollTo(0, 0);
       }, 50);
-      // if (!this.endAnimation) {
-      //   this.animationPlusIconDesktop.style.top = '50%';
-      //   this.animationPlusIconDesktop.classList.add('translationllc__intro__background__plus--desktop--active');
-      //   // this.animationScale <= this.animationThreshold &&
-      //   // this.animationPlusIconDesktop.style.transform = `translate3d(0, -50%, 0) scale(${Math.round(this.animationThreshold)})`;
-      //   this.animationPlusIcon.style.top = '50%';
-      //   this.animationPlusIcon.style.transform = `translateY(-50%) scale(${this.animationScale})`;
-      // } else {
-      //   this.endAnimation = true;
-      //   this.introElement.style.display = 'none';
-      //   this.mainElement.style.display = 'block';
-      //   // this.navElement.style.opacity = 1;
-      //   if (this.animationScrollHandlerDesktop) {
-      //     this.eventBus.removeChangeListener('signalScroll', this.animationScrollHandlerDesktop);
-      //   }
-      //   if (this.handleKeydownHandler) {
-      //     this.eventBus.removeChangeListener('keydown', this.handleKeydownHandler);
-      //   }
-      //   this.eventBus.removeChangeListener('signalTouchmove', this.animationScrollHandler);
-      //   WindowActions.endAnimation();
-      //   window.setTimeout(() => {
-      //     this.navElement.style.top = '-110px';
-      //     if (this.isSafari) {
-      //       this.htmlElement.style.overflow = null;
-      //     }
-      //   });
-      //   window.setTimeout(() => {
-      //     this.body.style.touchAction = 'auto';
-      //     this.navElement.style.opacity = 1;
-      //     this.navElement.style.top = 0;
-      //     this.mainElement.style.opacity = 1;
-      //     window.scrollTo(0, 0);
-      //   });
-      // }
     }
     this.initialScroll = false;
   }
