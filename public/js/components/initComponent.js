@@ -141,7 +141,6 @@ class InitComponent {
       }
       this.eventBus.removeChangeListener('signalTouchmove', this.animationScrollHandler);
       WindowActions.endAnimation();
-      // this.navElement.style.top = '-110px';
       window.setTimeout(() => {
         if (this.isSafari) {
           this.htmlElement.style.overflow = null;
