@@ -18,7 +18,7 @@ module.exports = {
   workVideoThreeContent: 'This commercial-turned-musical stars a woman whose dynamism is reflected by her choice of furniture.',
 
   workVideoFourUrl: 'http://www.translationllc.com/assets/films/NBA.mp4',
-  workVideoFourHeader: 'THE NBA PLAYOFFS ARE NO JOKE. (FEAT. SHAQ)',
+  workVideoFourHeader: 'THE NBA PLAYOFFS ARE NO JOKE (FEAT. SHAQ)',
   workVideoFourContent: 'We wanted to capture this raw and gritty gametime realness. But we couldn\'t do it ourselves. So we hired NBA royalty Shaq to help us out. Because, who else?',
 
   workVideoFiveUrl: 'http://www.translationllc.com/assets/films/APPLE.mp4',
