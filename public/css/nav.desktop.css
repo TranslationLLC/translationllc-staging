@@ -13,7 +13,9 @@
 .translationllc__nav {
   position: absolute;
   right: 0;
-  width: 30%;
+  /*width: 30%;*/
+  width: 19%;
+  font-size: 14px;
   top: 50%;
   transform: translateY(-50%);
 }
