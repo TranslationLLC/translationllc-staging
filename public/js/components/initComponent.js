@@ -18,9 +18,6 @@ class InitComponent {
       if (window.location.hash === '#introSection') {
         this.navElement.style.top = 0;
       }
-      if (window.location.hash) {
-        localStorage.setItem('tllc__lastHash', JSON.stringify({hash: window.location.hash, pos: window.pageYOffset}));
-      }
     });
     this.__setDOMVariables();
     this.__bindDOMEvents();
@@ -47,6 +44,7 @@ class InitComponent {
   __bindDOMEvents() {
     this.introSectionNav.addEventListener(window.clickevent, evt => {
       window.location.hash = '#introSection';
+      window.location = window.location.href;
     });
   }
   __currentPosition() {
@@ -121,19 +119,10 @@ class InitComponent {
       window.setTimeout(() => {
         this.introElement.style.display = 'none';
         this.mainElement.style.display = 'block';
-        let lastHash = false,
-            getLastHash = new Promise((resolve, reject) => {
-              resolve(localStorage.getItem('tllc__lastHash'));
-            });
-            getLastHash.then((lastHash) => {
-              if (lastHash) {
-                lastHash = JSON.parse(lastHash);
-                window.location.hash = lastHash.hash;
-                window.scrollTo(0, parseInt(lastHash.pos));
-              } else {
-                window.scrollTo(0, 0);
-              }
-            });
+        let lastHash = false;
+        if (window.location.hash) {
+          window.scrollTo(0, document.getElementById(window.location.hash.split('#')[1]).offsetTop);
+        }
       }, 800);
       if (this.animationScrollHandlerDesktop) {
         this.eventBus.removeChangeListener('signalScroll', this.animationScrollHandlerDesktop);

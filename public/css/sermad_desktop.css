@@ -69,8 +69,10 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-family:'Mark W01 Bold';
-	font-size: 2em;
+	/*font-size: 2em;*/
+	font-size: 3.3vw;
 	letter-spacing: 0.108em;
+}
 }
 
 .translationllc__section-icon__copy--container--intro {
