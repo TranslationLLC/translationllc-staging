@@ -7,15 +7,15 @@ module.exports = {
 
   workVideoOneUrl: 'http://www.translationllc.com/assets/films/KP.mp4',
   workVideoOneHeader: 'KP + STEPHEN CURRY RAISE MENTAL HEALTH AWARENESS',
-  workVideoOneContent: 'Quieting the mind to allow the body to thrive, Stephen Curry shows us that the real game begins&nbsp;within.',
+  workVideoOneContent: 'Quieting the mind to allow the body to thrive, Stephen Curry shows us that the real game begins within.',
 
   workVideoTwoUrl: 'http://www.translationllc.com/assets/films/NFL.mp4',
   workVideoTwoHeader: 'A STATEMENT OF UNITY ON THE GAME\'S BIGGEST STAGE',
-  workVideoTwoContent: '“Inside These Lines” shares an uplifting and unifying narrative about players and fans overcoming differences and banding&nbsp;together.',
+  workVideoTwoContent: '“Inside These Lines” shares an uplifting and unifying narrative about players and fans overcoming differences and banding together.',
 
   workVideoThreeUrl: 'http://www.translationllc.com/assets/films/VCF.mp4',
   workVideoThreeHeader: 'VCF STAGES A REBRAND WITH A NEW MUSICAL MIX',
-  workVideoThreeContent: 'This commercial-turned-musical stars a woman whose dynamism is reflected by her choice of&nbsp;furniture.',
+  workVideoThreeContent: 'This commercial-turned-musical stars a woman whose dynamism is reflected by her choice of furniture.',
 
   workVideoFourUrl: 'http://www.translationllc.com/assets/films/NBA.mp4',
   workVideoFourHeader: 'THE NBA PLAYOFFS ARE NO JOKE. (FEAT. SHAQ)',
