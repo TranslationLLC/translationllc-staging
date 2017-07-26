@@ -13,8 +13,7 @@
 .translationllc__nav {
   position: absolute;
   right: 0;
-  width: 19%;
-  /*font-size: 14px;*/
+  width: 30%;
   top: 50%;
   transform: translateY(-50%);
 }
