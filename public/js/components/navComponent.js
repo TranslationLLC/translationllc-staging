@@ -8,6 +8,7 @@ class NavComponent {
     this.previousScroll = 0;
     this.previousHash = window.location.hash;
     window.location.hash = '';
+    this.hashScrollPositions = {};
     this.__setDOMVariables();
     this.__bindDOMEvents();
     this.__bindFlux();
@@ -40,6 +41,12 @@ class NavComponent {
     if (evt.target.hash) {
       this.previousHash = window.location.hash;
       window.location.hash = evt.target.hash;
+      if (!this.hashScrollPositions[evt.target.hash]) {
+        this.hashScrollPositions[evt.target.hash] = document.getElementById(evt.target.hash.split('#')[1]).offsetTop;
+      }
+      if (this.previousHash === evt.target.hash) {
+        window.scrollTo(0, this.hashScrollPositions[evt.target.hash]);
+      }
     }
   }
   __animateNav(data) {
