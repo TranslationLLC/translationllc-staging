@@ -3,7 +3,7 @@ module.exports = {
 
   sizzleVideoUrl: 'http://www.translationllc.com/assets/films/SIZZLE.mp4',
   sizzleVideoHeader: 'GREATEST HITS',
-  sizzleVideoContent: 'Whether it’s creating an alter-ego for an NBA All-Star, a music festival for the new America, or giving the king of Snapchat his very own store, our work drives the cultural resonance of our partner brands.',
+  sizzleVideoContent: 'Whether it’s creating an alter ego for an NBA All-Star, producing a music festival for the new America, or giving the King of Snapchat his very own store, our work drives the cultural resonance of our partner brands.',
 
   workVideoOneUrl: 'http://www.translationllc.com/assets/films/KP.mp4',
   workVideoOneHeader: 'KP + STEPHEN CURRY RAISE MENTAL HEALTH AWARENESS',
@@ -27,7 +27,7 @@ module.exports = {
 
   workVideoSixUrl: 'http://www.translationllc.com/assets/films/BMIA.mp4',
   workVideoSixHeader: 'BRINGING BUDWEISER BACK WITH "MADE IN AMERICA"',
-  workVideoSixContent: 'At an integral moment in their brand’s history, Budweiser and Jay Z teamed up to bridge the American generational gap using the power of music.',
+  workVideoSixContent: 'At an integral moment in their brand’s history, Budweiser and Jay-Z teamed up to bridge the American generational gap using the power of music.',
 
   workVideoSevenUrl: 'http://www.translationllc.com/assets/films/STATEFARM.mp4',
   workVideoSevenHeader: 'CHRIS & CLIFF PAUL WERE BORN TO ASSIST',
@@ -38,22 +38,22 @@ module.exports = {
   workVideoEightContent: 'Much more than a campaign, “Hello Brooklyn” was the team’s introduction to a borough, and a city.  And our work with the Nets continues today to rally fans and reignite their passion for Brooklyn basketball.',
 
   workVideoNineUrl: 'http://www.translationllc.com/assets/films/CHAMPSv2.mp4',
-  workVideoNineHeader: 'CHAMPS AND DJ KHALED BRING GAME TO LIFE',
-  workVideoNineContent: 'By building a Champs store inside former employee DJ Khaled’s home, this campaign breathed life into their tagline "We Know Game."',
+  workVideoNineHeader: 'CHAMPS SPORTS AND DJ KHALED BRING GAME TO LIFE',
+  workVideoNineContent: 'By building a Champs Sports store inside former employee DJ Khaled’s home, this campaign breathed life into their tagline "We Know Game."',
 
-  articleOnePublication: 'BRAND CHANNEL',
+  articleOnePublication: 'BRANDCHANNEL',
   articleOneLink: 'http://www.brandchannel.com/2017/06/20/cannes-lions-nba-nfl-062017/',
-  articleOneHeader: 'Cannes 2017: The Wise women of the NBA and NFL',
+  articleOneHeader: 'Cannes 2017: The Wise Women Of The NBA And NFL',
   articleOneByline: 'BY: SHEILA SHAYON',
 
   articleTwoPublication: 'BERKELEY NEWS',
   articleTwoLink: 'http://news.berkeley.edu/2017/05/19/dj-khaled-surprises-statistics-graduation/',
-  articleTwoHeader: 'Steve Stoute Addresses Berkeley and Surprises Graduates with DJ Khaled',
+  articleTwoHeader: 'Steve Stoute Addresses Berkeley And Surprises Graduates With DJ Khaled',
   articleTwoByline :'BY: PUBLIC AFFAIRS, UC BERKELEY',
 
   articleThreePublication: 'CAMPAIGN',
   articleThreeLink: 'http://www.campaignlive.com/article/career-5-executions-translations-john-norman/1430517',
-  articleThreeHeader: 'My Career in 5 Executions: Translation’s John Norman',
+  articleThreeHeader: 'My Career In 5 Executions: Translation’s John Norman',
   articleThreeByline: 'BY: I-HSIEN SHERWOOD',
 
   articleFourPublication: '',
@@ -63,19 +63,19 @@ module.exports = {
 
   articleFivePublication: 'FAST CO.',
   articleFourLink: 'https://www.fastcompany.com/40405973/the-nba-playoffs-are-here-and-heres-how-stephen-curry-trains-his-mi',
-  articleFourHeader: 'The NBA Playoffs are Here, and Here’s How Steph Curry Trains His Mind',
+  articleFourHeader: 'The NBA Playoffs Are Here, And Here’s How Steph Curry Trains His Mind',
   articleFourByline: 'BY: JEFF BEER',
 
-  articleSixPublication: 'BRAND CHANNEL',
+  articleSixPublication: 'BRANDCHANNEL',
   articleSixLink: 'http://brandchannel.com/2017/04/10/la-la-land-vcf-041017/',
-  articleSixHeader: 'Tapping La La Land’s Choreographer, VCF is “Made to Mix”',
+  articleSixHeader: 'Tapping La La Land’s Choreographer, VCF Is “Made To Mix”',
   articleSixByline: 'BY: ABE SAUER',
 
   cultureSectionCopy: 'We believe brands that are brave enough to lead culture will always be more successful than brands chasing to follow it. At Translation, we help ambitious brands thrive in contemporary culture, because we live in it and invite our partners to innovate within it.',
 
   cultureSectionVideoUrl: 'http://www.translationllc.com/assets/films/BIGGIEBREAKFAST.mp4',
   cultureSectionVideoHeader: 'A BIG WAY TO SPREAD LOVE IN BROOKLYN',
-  cultureSectionVideoContent: 'To celebrate Biggie’s life and legacy, on March 9, 2016 we took to his hometown of Bed-Stuy, Brooklyn, to feed the needy with a special, signature dish.',
+  cultureSectionVideoContent: 'To celebrate Biggie’s life and legacy, on March 9, 2016, we took to his hometown of Bed-Stuy, Brooklyn, to feed the needy with a special, signature dish.',
 
   majorsMinorsContent: 'At Translation, our personal passions are just as important as the titles on our business cards. We are creators, collectors, historians, and more. And in everything we do, we allow our expert fluency across different pockets of culture to spill into the boardroom and elevate the work.'
 }
