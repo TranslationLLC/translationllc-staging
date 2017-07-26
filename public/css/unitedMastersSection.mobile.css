@@ -27,4 +27,5 @@
   position: relative;
   background: black;
   z-index: 3;
+  display: none;
 }
