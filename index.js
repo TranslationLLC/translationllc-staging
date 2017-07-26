@@ -1,34 +1,18 @@
-var keystone = require('keystone'),
-    hbs = require('express-handlebars'),
-    rtm,
-    env = require('./public/js/utils/env.js'),
-    conditionalIf = require('./lib/handlebarsHelpers/conditionalIf.js'),
-    handlebarsConfig = {
-      defaultLayout: 'main',
-      layoutsDir: 'templates/layouts',
-      partialsDir: 'templates/partials',
-      helpers: {
-        conditionalIf: conditionalIf
-      }
-    };
-keystone.init({
-  'name': 'TranslationLLC',
-  'brand': 'TranslationLLC',
-  'static': ['public'],
-  'views': 'templates/partials',
-  'custom engine': hbs(handlebarsConfig),
-  'view engine': 'handlebars',
-  'auto update': true,
-  'mongo': env.TRANSLATION_MONGODB_URI,
-  'session': true,
-  'auth': true,
-  'user model': 'User',
-  'cookie secret': env.TRANSLATION_KEYSTONE_COOKIE_SECRET
+var express = require('express'),
+    app = express(),
+    expresshbs = require('express-handlebars'),
+    hbs = expresshbs.create(),
+    hbsInstance = expresshbs({defaultLayout: 'main'}),
+    content = require('./views/content.js');
+app.engine('handlebars', hbsInstance);
+app.set('view engine', 'handlebars');
+app.use('/dist', express.static(process.cwd() + '/public/dist'));
+app.use('/assets', express.static(process.cwd() + '/public/assets'));
+app.use('/css', express.static(process.cwd() + '/public/css'));
+app.use('/fonts', express.static(process.cwd() + '/public/fonts'));
+app.get('/', function(req, res) {
+  res.render('homepage', content);
 });
-require('./models');
-keystone.set('routes', require('./routes'));
-keystone.set('nav', {
-  'pages': ['Homepage'],
-  'components': ['CarouselComponent', 'SlideComponent', 'VideoComponent', 'ImageTextComponent']
+app.listen(process.env.PORT || 3000, function(req, res) {
+  console.log('app started');
 });
-keystone.start();

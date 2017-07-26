@@ -6,11 +6,12 @@ var gulp = require('gulp'),
     browserify = require('browserify'),
     path = require('path'),
     rename = require('gulp-rename'),
-    handlebars = require('gulp-compile-handlebars'),
-    tap = require('gulp-tap'),
     minify = require('gulp-minify'),
     uglify = require('gulp-uglify'),
-    htmlMinify = require('gulp-htmlmin'),
+    htmlMinify = require('html-minifier').minify,
+    content = require('./views/content.js'),
+    hbs = require('express-handlebars').create(),
+    fs = require('fs'),
     exec = require('child_process').exec;
 
 gulp.task('compileMobileCss', function() {
@@ -30,9 +31,6 @@ gulp.task('compileDesktopCss', function() {
   })
   .pipe(concat('bundle.desktop.css'))
   .pipe(gulp.dest('public/dist'));
-});
-gulp.task('compileEnv', function() {
-  exec('bash ./bin/env.sh > ./public/js/utils/env.js');
 });
 gulp.task('compileJs', function() {
   var apps = [
@@ -58,27 +56,16 @@ gulp.task('compileJs', function() {
   });
 });
 gulp.task('compileHandlebars', function() {
-  var data = {};
-  return gulp.src(['./templates/partials/header.handlebars', './templates/partials/homepageScripts.handlebars', './templates/partials/homepage.handlebars'])
-  .pipe(tap(function(file, t) {
-    var pathBasename = path.basename(file.path);
-    if (pathBasename.indexOf('header') > -1) {
-      data['header'] = file.contents.toString();
-    } else if (pathBasename.indexOf('homepageScripts') > -1) {
-      data['homepageScripts'] = file.contents.toString();
-    } else if (pathBasename.indexOf('homepage') > -1) {
-      data['body'] = file.contents.toString().replace('{{> header}}', data['header']).replace('{{> homepageScripts}}', data['homepageScripts']);
-    }
-    if (data.body) {
-      // var minifiedHtml = htmlMinify(data.body, {collapseWhitespace: true, removeComments: true});
-      return gulp.src('./templates/layouts/main.handlebars')
-      .pipe(handlebars(data))
-      .pipe(htmlMinify({
-        collapseWhitespace: true
-      }))
-      .pipe(rename('index.html'))
-      .pipe(gulp.dest('public/dist/html'))
-    }
-  }));
+  hbs.render('./views/layouts/main.handlebars', {body: '__body__'}).then(function(data) {
+    hbs.render('./views/homepage.handlebars', content).then(function(homepageData) {
+      fs.writeFile('./public/dist/html/index.html', htmlMinify(data.replace('__body__', homepageData), {collapseWhitespace: true}), function(err) {
+        if (!err) {
+          console.log('index.html file compiled');
+        } else {
+          console.log('error compiling index.html ', err);
+        }
+      });
+    });
+  });
 });
-gulp.task('default', ['compileMobileCss', 'compileDesktopCss', 'compileJs', 'compileEnv', 'compileHandlebars']);
+gulp.task('default', ['compileMobileCss', 'compileDesktopCss', 'compileJs', 'compileHandlebars']);

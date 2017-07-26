@@ -1,5 +1,7 @@
 .translationllc__main__united-masters__gif {
-  background-image: url(../assets/unitedMasters.gif);
+  display: block;
+  width: 50%;
+  margin: auto;
 }
 .translationllc__main__united-masters__next-chapter {
   padding-left: 1.25rem;
@@ -25,4 +27,5 @@
   position: relative;
   background: black;
   z-index: 3;
+  display: none;
 }

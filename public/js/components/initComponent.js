@@ -130,6 +130,8 @@ class InitComponent {
                 lastHash = JSON.parse(lastHash);
                 window.location.hash = lastHash.hash;
                 window.scrollTo(0, parseInt(lastHash.pos));
+              } else {
+                window.scrollTo(0, 0);
               }
             });
       }, 800);
