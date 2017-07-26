@@ -122,6 +122,8 @@ class InitComponent {
         let lastHash = false;
         if (window.location.hash) {
           window.scrollTo(0, document.getElementById(window.location.hash.split('#')[1]).offsetTop);
+        } else {
+          window.scrollTo(0, 0);
         }
       }, 800);
       if (this.animationScrollHandlerDesktop) {
