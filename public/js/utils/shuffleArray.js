@@ -10,5 +10,5 @@ export function shuffleArray(imagesArray) {
     imagesArray[i] = imagesArray[randomIndex];
     imagesArray[randomIndex] = temporaryValue;
   }
-  return imagesArray.slice(0, 19);
+  return imagesArray.slice(0, 20);
 }

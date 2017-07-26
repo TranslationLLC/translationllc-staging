@@ -35,7 +35,7 @@ module.exports = {
 
   workVideoEightUrl: 'http://www.translationllc.com/assets/films/NETS.mp4',
   workVideoEightHeader: 'NETS UNITE A BOROUGH BY SAYING HELLO',
-  workVideoEightContent: 'Much more than a campaign, “Hello Brooklyn” was the team’s introduction to a borough, and a city.  And our work with the Nets continues today to rally fans and reignite their passion for Brooklyn&nbsp;basketball.',
+  workVideoEightContent: 'Much more than a campaign, “Hello Brooklyn” was the team’s introduction to a borough, and a city.  And our work with the Nets continues today to rally fans and reignite their passion for Brooklyn basketball.',
 
   workVideoNineUrl: 'http://www.translationllc.com/assets/films/CHAMPSv2.mp4',
   workVideoNineHeader: 'CHAMPS AND DJ KHALED BRING GAME TO LIFE',
