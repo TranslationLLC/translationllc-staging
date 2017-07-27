@@ -1,3 +1,17 @@
+.translationllc__intro__background__plus--desktop {
+	/*transition: all 2s ease-in-out;*/
+}
+
+
+.translationllc__intro__background__plus--desktop:hover {
+	/*transform: scale(50);*/
+}
+
+.translationllc__intro__background__plus--desktop:hover {
+	/*border:10px solid red;*/
+}
+
+
 html {
 	font-size:18px;
 	/*letter-spacing:.1em;*/
