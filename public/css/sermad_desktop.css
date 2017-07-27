@@ -176,6 +176,7 @@ h1 {
 }
 
 .translationllc__section-icon--majors-minors {
+	/*background-size: 600px;*/
 	background-size: 600px;
 	height:540px;
 	margin:0px 0 55px 0;
