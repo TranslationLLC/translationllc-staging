@@ -85,23 +85,26 @@
   height: 80vh;
   z-index: 10;
 }
-.translationllc__intro__background__plus--desktop {
-  background-image: url(../assets/PlusIcon.svg);
+.translationllc__intro__background__plus {
+  /*background-image: url(../assets/PlusIcon.svg);
   width: 70%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   position: absolute;
-  transform: translateY(-50%) scale(1);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: auto;
-  height: 100%;
-  top: 45%;
+  height: 50%;
+  width: 50%;
+  top: 50%;
 }
 .translationllc__intro__background__plus--desktop--active {
-  transform: scale(60);
-  transition: all 0.25s linear;
+  animation: 0.33s linear 0.2s plusFlash;
+}
+@keyframes plusFlash {
+  100% {transform: translateY(-50%) scale(50);}
 }
 .translationllc__intro__carousel--desktop__wrapper {
-  height: 350%;
+  height: 0%;
 }
