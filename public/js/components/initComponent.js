@@ -8,6 +8,8 @@ class InitComponent {
   __init() {
     this.initialScroll = true;
     this.showIntro = false;
+    //change this flag to 'false' when the site should no longer jump to UM section
+    this.jumpToUM = true;
     window.addEventListener('beforeunload', () => {
       window.scrollTo(0, 0);
     });
@@ -66,7 +68,9 @@ class InitComponent {
       this.navElement.style.opacity = 1;
       this.navElement.style.top = 0;
       this.mainElement.style.opacity = 1;
-      if (window.location.hash) {
+      if (this.jumpToUM) {
+        window.scrollTo(0, document.getElementById('unitedMasters').offsetTop);
+      } else if (window.location.hash){
         window.scrollTo(0, document.getElementById(window.location.hash.split('#')[1]).offsetTop);
       } else {
         window.scrollTo(0, 0);
