@@ -56,12 +56,7 @@ module.exports = {
   articleThreeHeader: 'My Career In 5 Executions: Translation’s John Norman',
   articleThreeByline: 'BY: I-HSIEN SHERWOOD',
 
-  articleFourPublication: '',
-  articleFourLink: '',
-  articleFourHeader: '',
-  articleFourByline: '',
-
-  articleFivePublication: 'FAST CO.',
+  articleFourPublication: 'FAST CO.',
   articleFourLink: 'https://www.fastcompany.com/40405973/the-nba-playoffs-are-here-and-heres-how-stephen-curry-trains-his-mi',
   articleFourHeader: 'The NBA Playoffs Are Here, And Here’s How Steph Curry Trains His Mind',
   articleFourByline: 'BY: JEFF BEER',
