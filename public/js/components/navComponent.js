@@ -22,6 +22,7 @@ class NavComponent {
     this.eventBus.addChangeListener('signalDetection', this.__detection.bind(this));
   }
   __detection(detectionData) {
+    this.isMobile = detectionData.isMobile;
     this.__boundAnimateNav = this.__animateNav.bind(this);
     if (detectionData.isMobile) {
       if (!this.changeListenerAdded) {
@@ -45,23 +46,25 @@ class NavComponent {
     }
   }
   __animateNav(data) {
-    if (data.lastKnownScrollPosition === 0) {
-      this.navMenu.style.top = 0;
-    } else {
-      if (this.previousScroll > data.lastKnownScrollPosition) {
-        if (window.location.hash !== this.previousHash) {
-          this.navMenu.style.top = '-170px';
-          this.previousHash = window.location.hash;
-        } else {
-          this.navMenu.style.top = 0;
-        }
+    if (this.isMobile) {
+      if (data.lastKnownScrollPosition === 0) {
+        this.navMenu.style.top = 0;
       } else {
-        if (data.lastKnownScrollPosition > 500) {
-          this.navMenu.style.top = '-170px';
+        if (this.previousScroll > data.lastKnownScrollPosition) {
+          if (window.location.hash !== this.previousHash) {
+            this.navMenu.style.top = '-170px';
+            this.previousHash = window.location.hash;
+          } else {
+            this.navMenu.style.top = 0;
+          }
+        } else {
+          if (data.lastKnownScrollPosition > 500) {
+            this.navMenu.style.top = '-170px';
+          }
         }
       }
+      this.previousScroll = data.lastKnownScrollPosition;
     }
-    this.previousScroll = data.lastKnownScrollPosition;
   }
 }
 export const navComponent = new NavComponent();

@@ -7,11 +7,12 @@ class InitComponent {
   }
   __init() {
     this.initialScroll = true;
+    this.showIntro = false;
     window.addEventListener('beforeunload', () => {
       window.scrollTo(0, 0);
     });
     window.addEventListener('hashchange', (evt) => {
-      if (window.location.hash === '#introSection') {
+      if (window.location.hash === '#intro') {
         this.navElement.style.top = 0;
       }
     });
@@ -26,25 +27,18 @@ class InitComponent {
     this.mainElement = document.getElementById('translationllcMain');
     this.htmlElement = document.getElementsByTagName('html')[0];
     this.animationElementDesktop = document.getElementById('translationllcAnimationDesktop');
-    this.animationPlusIconSvg = document.getElementById('animationPlusIconSvg');
     this.animationPlusIcon = document.getElementById('animationPlusIcon');
     this.animationPlusIcon1 = document.getElementById('animationPlusIcon1');
     this.animationPlusIcon2 = document.getElementById('animationPlusIcon2');
     this.translationllcWeAreTranslationDesktop = document.getElementById('translationllcWeAreTranslationDesktop');
-    // this.animationPlusIcon = document.getElementById('animationPlusIcon');
-    this.introSectionNav = document.getElementById('introSectionNav');
+    this.animationPlusIcons = document.getElementsByClassName('translationllc__intro__background__plus');
     this.carouselDesktopWrapper = document.getElementById('carouselDesktopWrapper');
     this.backgroundParallaxOnePlaceholder = document.getElementById('backgroundParallaxOnePlaceholder');
     this.translationllcMainHash = document.getElementById('translationllcMain');
     this.translationllcWeAreCulturalCatalysts = document.getElementById('translationllcWeAreCulturalCatalysts');
-    this.translationllcWeAreTranslation = document.getElementById('translationllcWeAreTranslation');
     this.translationllcCulturalCatalysts = document.getElementById('translationllcCulturalCatalysts');
   }
   __bindDOMEvents() {
-    this.introSectionNav.addEventListener(window.clickevent, evt => {
-      window.location.hash = '#introSection';
-      window.location = window.location.href;
-    });
     this.animationPlusIcon.addEventListener('animationend', () => {
       this.animationPlusIcon.style.transform = 'scale(50)';
       this.animationPlusIcon.style['z-index'] = 0;
@@ -79,44 +73,24 @@ class InitComponent {
       }
     });
   }
-  __currentPosition() {
-    return window.pageYOffset;
-  }
   __showIntro(detectionData) {
+    this.showIntro = true;
     if (detectionData.isDesktop) {
       this.mainElement.style.display = 'none';
-      // this.animationPlusIcon.style.display = 'none';
-      this.translationllcWeAreTranslation.style.display = 'none';
       this.animationScrollHandlerDesktop = this.__animationScrollHandler.bind(this);
       this.eventBus.addChangeListener('signalScroll', this.animationScrollHandlerDesktop);
       if (detectionData.isSafari) {
         this.htmlElement.style.overflow = 'auto';
         this.carouselDesktopWrapper.style.height = '100%';
       }
-    } else if (detectionData.isLandscape && detectionData.isIpad) {
+    } else {
+      if (this.isMobile && this.isSafari) {
+        //iOS hack to force scroll back to top if hash in url
+        window.setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 500);
+      }
       this.carouselDesktopWrapper.style.display = 'none';
-    }
-  }
-  __resizeSvgs(detectionData) {
-    if (detectionData.isDesktop || (detectionData.isIpad && Math.abs(detectionData.orientation) === 90)) {
-      this.translationllcWeAreTranslationDesktop.classList.remove('hide-component');
-      // this.animationPlusIcon.classList.remove('hide-component');
-      // if (detectionData.isDesktop) {
-      //   this.carouselDesktopWrapper.classList.remove('hide-component');
-      // }
-      // this.animationPlusIcon.style.backgroundSize = `${this.animationPlusIcon.getBoundingClientRect().height / 2}px`;
-    } else if (detectionData.orientation === 0) {
-      //77 when logo is in the header
-      // this.animationPlusIcon.style.height = `${Math.floor(Math.ceil(window.innerHeight / 2 + 100 - 44) * .6)}px`;
-      // this.animationPlusIcon.style.width = '50%';
-      this.translationllcWeAreTranslation.style.height = `${Math.floor(Math.ceil(window.innerHeight / 2 + 100 - 44) * .6)}px`;
-      this.translationllcWeAreTranslation.style.top = '50%';
-      this.translationllcWeAreTranslation.transform = 'translateY(-50%)';
-    } else if (Math.abs(detectionData.orientation) === 90) {
-      // this.animationPlusIcon.style.height = '100%';
-      // this.animationPlusIcon.style.width = '40%';
-      this.translationllcWeAreTranslation.style.height = '50%';
-      this.translationllcWeAreTranslation.style.top = '40%';
     }
   }
   __bindFlux() {
@@ -135,20 +109,7 @@ class InitComponent {
   __animationScrollHandler(data) {
     if (!this.initialScroll) {
       WindowActions.endAnimation();
-      this.animationPlusIcon.style.top = '50%';
       this.animationPlusIcon.classList.add('translationllc__intro__background__plus--desktop--active');
-      // this.animationPlusIcon.style.top = '50%';
-      this.animationPlusIcon.classList.add('translationllc__intro__background__plus--desktop--active');
-      this.animationPlusIconSvg.classList.add('translationllc__intro__background__plus--svg--active')
-      // window.setTimeout(() => {
-      //   this.introElement.style.display = 'none';
-      //   this.mainElement.style.display = 'block';
-      //   if (window.location.hash) {
-      //     window.scrollTo(0, document.getElementById(window.location.hash.split('#')[1]).offsetTop);
-      //   } else {
-      //     window.scrollTo(0, 0);
-      //   }
-      // }, 1000);
       if (this.animationScrollHandlerDesktop) {
         this.eventBus.removeChangeListener('signalScroll', this.animationScrollHandlerDesktop);
       }
@@ -156,32 +117,15 @@ class InitComponent {
         this.eventBus.removeChangeListener('keydown', this.handleKeydownHandler);
       }
       this.eventBus.removeChangeListener('signalTouchmove', this.animationScrollHandler);
-      // window.setTimeout(() => {
-      //   if (this.isSafari) {
-      //     this.htmlElement.style.overflow = null;
-      //   }
-      // }, 500);
-      // window.setTimeout(() => {
-      //   this.body.style.touchAction = 'auto';
-      //   this.navElement.style.opacity = 1;
-      //   this.navElement.style.top = 0;
-      //   this.mainElement.style.opacity = 1;
-      // }, 500);
     }
     this.initialScroll = false;
   }
   __detection(data) {
-    if (!this.introLoaded) {
-      this.isMobile = data.isMobile;
-      this.isSafari = data.isSafari;
-      this.isDesktop = data.isDesktop;
-      this.__resizeSvgs(data);
+    this.isSafari = data.isSafari;
+    this.isMobile = data.isMobile;
+    if (!this.showIntro) {
       this.__showIntro(data);
     }
-    this.introLoaded = true;
-  }
-  __showMain() {
-    this.mainElement.style.display = 'block';
   }
 }
 export const initComponent = new InitComponent();

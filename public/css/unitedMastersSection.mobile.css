@@ -23,9 +23,8 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-#unitedMastersSection {
+.translationllc__main__united-masters {
   position: relative;
   background: black;
   z-index: 3;
-  display: none;
 }

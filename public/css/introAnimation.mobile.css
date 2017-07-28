@@ -23,18 +23,6 @@
   transform: translateY(-50%);
   z-index: 10;
 }
-.translationllc__intro__background__plus {
-  background-image: url(../assets/PlusIcon.svg);
-  width: 70%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transform: scale(1);
-}
 .translationllc__intro__background__plus--resolve {
   background-image: url(../assets/PlusIcon.svg);
   width: 50%;
@@ -86,10 +74,6 @@
   z-index: 10;
 }
 .translationllc__intro__background__plus {
-  /*background-image: url(../assets/PlusIcon.svg);
-  width: 70%;
-  background-repeat: no-repeat;
-  background-position: center;*/
   position: absolute;
   transform: translateY(-50%);
   left: 0;
@@ -107,4 +91,7 @@
 }
 .translationllc__intro__carousel--desktop__wrapper {
   height: 0%;
+}
+.translationllc__header__translation-logo_sermad__logo {
+  pointer-events: none;
 }
