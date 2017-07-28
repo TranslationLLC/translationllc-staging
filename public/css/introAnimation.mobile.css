@@ -83,12 +83,31 @@
   width: 50%;
   top: 50%;
 }
+
 .translationllc__intro__background__plus--desktop--active {
-  animation: 0.33s linear 0.2s plusFlash;
+
+  animation-name: plusFlash;
+  animation-duration: 0.35s; 
+  animation-timing-function: ease-in; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+
+  /*animation: 5s linear 0.2s plusFlash;*/
+  
 }
+
 @keyframes plusFlash {
   100% {transform: translateY(-50%) scale(50);}
+  /*100% {transform: translateY(-50%) scale(50);}*/
 }
+
+@keyframes plusFlash2 {
+  100% {transform: translateY(-50%) scale(50);}
+}
+
 .translationllc__intro__carousel--desktop__wrapper {
   height: 0%;
 }
