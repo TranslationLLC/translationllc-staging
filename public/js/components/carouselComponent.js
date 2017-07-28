@@ -177,7 +177,6 @@ class CarouselComponent {
     this.introCarouselLoaded = true;
   }
   __resize(data) {
-    let bodyClientRect = document.getElementsByTagName('body')[0].getBoundingClientRect();
     this.loadedImages.forEach((imageElement) => {
       if (data.useHeightAspectRatio) {
         imageElement.classList.add('translationllc__intro__carousel--height-aspect-ratio');
@@ -201,10 +200,9 @@ class CarouselComponent {
         image.classList.remove('translationllc__intro__carousel--ipad');
         image.classList.add('translationllc__intro__carousel--height-aspect-ratio');
       } else if (data.orientation === 0 && this.detectionData.isBigIpad) {
-        image.classList.remove('translationllc__intro__carousel--height-aspect-ratio');
-        image.classList.add('translationllc__intro__carousel--ipad');
+        image.classList.add('translationllc__intro__carousel--height-aspect-ratio');
+        image.classList.remove('translationllc__intro__carousel--ipad');
       }
-
     });
   }
   __selectImageUrls(detectionData, carouselType) {

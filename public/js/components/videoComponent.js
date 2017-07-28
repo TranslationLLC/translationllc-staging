@@ -60,11 +60,11 @@ class VideoComponent {
         this.__resetVideoState(video.id);
       });
       video.addEventListener('webkitendfullscreen', (evt) => {
+        video.pause();
         this.__resetVideoState(video.id);
       });
       video.addEventListener('pause', (evt) => {
         let currentTime = evt.target.currentTime;
-
         window.setTimeout(() => {
           if (evt.target.paused) {
             if (currentTime === evt.target.currentTime) {
