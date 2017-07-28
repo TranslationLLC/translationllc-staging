@@ -53,8 +53,5 @@ class PreserveAspectRatioComponent {
       }
     }
   }
-  __resizeImages() {
-
-  }
 }
 export const preserveAspectRatioComponent = new PreserveAspectRatioComponent();

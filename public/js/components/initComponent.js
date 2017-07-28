@@ -7,6 +7,7 @@ class InitComponent {
   }
   __init() {
     this.initialScroll = true;
+    this.showIntro = false;
     window.addEventListener('beforeunload', () => {
       window.scrollTo(0, 0);
     });
@@ -65,10 +66,6 @@ class InitComponent {
       this.navElement.style.opacity = 1;
       this.navElement.style.top = 0;
       this.mainElement.style.opacity = 1;
-      // let sections = document.querySelectorAll('[data-section-id]');
-      // for (let i = 0; i < sections.length; i++) {
-      //   sections[i].setAttribute('id', sections[i].dataset['sectionId']);
-      // }
       if (window.location.hash) {
         window.scrollTo(0, document.getElementById(window.location.hash.split('#')[1]).offsetTop);
       } else {
@@ -77,6 +74,7 @@ class InitComponent {
     });
   }
   __showIntro(detectionData) {
+    this.showIntro = true;
     if (detectionData.isDesktop) {
       this.mainElement.style.display = 'none';
       this.animationScrollHandlerDesktop = this.__animationScrollHandler.bind(this);
@@ -125,7 +123,9 @@ class InitComponent {
   __detection(data) {
     this.isSafari = data.isSafari;
     this.isMobile = data.isMobile;
-    this.__showIntro(data);
+    if (!this.showIntro) {
+      this.__showIntro(data);
+    }
   }
 }
 export const initComponent = new InitComponent();
