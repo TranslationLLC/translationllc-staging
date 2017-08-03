@@ -265,7 +265,7 @@
       <div class="translationllc__main__articles__article">
         <h5 class="translationllc__main__articles__article-publication">{{articleOnePublication}}</h5>
         <div class="translationllc__main__articles__article-title-author-container">
-          <a class="translationllc__main__articles__article-link" href="{{articleOneLink}}" target="_blank">{{articleOneHeader}}</a>
+          <a class="translationllc__main__articles__article-link" href="{{articleOneLink}}">{{articleOneHeader}}</a>
           <p class="translationllc__main__articles__article-author">{{articleOneByline}}</p>
         </div>
       </div>
@@ -273,7 +273,7 @@
       <div class="translationllc__main__articles__article">
         <h5 class="translationllc__main__articles__article-publication">{{articleTwoPublication}}</h5>
         <div class="translationllc__main__articles__article-title-author-container">
-          <a class="translationllc__main__articles__article-link" href="{{articleTwoLink}}" target="_blank">{{articleTwoHeader}}</a>
+          <a class="translationllc__main__articles__article-link" href="{{articleTwoLink}}">{{articleTwoHeader}}</a>
           <p class="translationllc__main__articles__article-author">{{articleTwoByline}}</p>
         </div>
       </div>
@@ -281,7 +281,7 @@
       <div class="translationllc__main__articles__article">
         <h5 class="translationllc__main__articles__article-publication">{{articleThreePublication}}</h5>
         <div class="translationllc__main__articles__article-title-author-container">
-          <a class="translationllc__main__articles__article-link" href="{{articleThreeLink}}" target="_blank">{{articleThreeHeader}}</a>
+          <a class="translationllc__main__articles__article-link" href="{{articleThreeLink}}">{{articleThreeHeader}}</a>
           <p class="translationllc__main__articles__article-author">{{articleThreeByline}}</p>
         </div>
       </div>
@@ -289,14 +289,14 @@
       <div class="translationllc__main__articles__article">
         <h5 class="translationllc__main__articles__article-publication">{{articleFourPublication}}</h5>
         <div class="translationllc__main__articles__article-title-author-container">
-          <a  class="translationllc__main__articles__article-link" href="{{articleFourLink}}" target="_blank">{{articleFourHeader}}</a>
+          <a  class="translationllc__main__articles__article-link" href="{{articleFourLink}}">{{articleFourHeader}}</a>
           <p class="translationllc__main__articles__article-author">{{articleFourByline}}</p>
         </div>
       </div>
       <div class="translationllc__main__articles__article">
         <h5 class="translationllc__main__articles__article-publication">{{articleSixPublication}}</h5>
         <div class="translationllc__main__articles__article-title-author-container">
-          <a  class="translationllc__main__articles__article-link" href="{{articleSixLink}}" target="_blank">{{articleSixHeader}}</a>
+          <a  class="translationllc__main__articles__article-link" href="{{articleSixLink}}">{{articleSixHeader}}</a>
           <p class="translationllc__main__articles__article-author">{{articleSixByline}}</p>
         </div>
       </div>
@@ -341,9 +341,40 @@
       </div>
     </div>
   </section>
-  
-
-  
+  <section class="hide-component translationllc__main__united-masters" id="unitedMasters">
+    <img class="translationllc__main__united-masters__gif" src="../assets/unitedMasters.gif" alt="united masters mtv gif">
+    <div class="translationllc__main__united-masters__next-chapter">
+      <h2 class="translationllc__main__united-masters__next-chapter__header">OUR NEXT CHAPTER</h2>
+      <p class="translationllc__main__united-masters__next-chapter__content">
+        From the beginning, Translation was a different kind of team: a diverse mix of music industry veterans,
+        strategic experts, multidisciplinary creatives, and innovative business leaders.
+      </p>
+      <p class="translationllc__main__united-masters__next-chapter__content">
+        Knowing that cultural relevance demands constant re-invention, we have gone through countless transformations
+        as we have seen our company grow from a few people gathered in a single conference room to a vibrant team
+        of 150 across two coasts.
+      </p>
+      <p class="translationllc__main__united-masters__next-chapter__content">
+        And now, in partnership with Alphabet Inc., Andreessen Horowitz, 21st Century Fox and Floodgate, we are embarking
+        upon our greatest transformation to date.
+      </p>
+      <p class="translationllc__main__united-masters__next-chapter__content">
+        We are thrilled to introduce UnitedMasters: Translation's new partner company.
+      </p>
+      <p class="translationllc__main__united-masters__next-chapter__content">
+        UnitedMasters is an entirely new kind of music company, built to unite the power of data and the pursuit
+        of creative freedom to invent new ways to help artists maximize their creative and economic potential.
+      </p>
+      <p class="translationllc__main__united-masters__next-chapter__content">
+        This is the biggest chapter yet of the WIP story we began in 2004, and we couldn't be more excited about what the
+        future will hold.
+      </p>
+      <hr>
+    </div>
+    <div class="translationllc__main__united-masters__logo">
+    </div>
+    <hr>
+  </section>
   <section class="translationllc__contact-us" id="contactUs">
     <h2 class="translationllc__contact-us__header">STAY IN TOUCH</h2>
     <div class="translationllc__contact-us__two-column-container">
@@ -376,10 +407,10 @@
           <a href="mailto:referrals@translationllc.com">referrals@translationllc.com</a>
         </div>
         <ul class="translationllc__contact-us__social-media">
-          <a href="https://www.instagram.com/wearetranslation/" target="_blank"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--instagram"></li></a>
-          <a href="https://twitter.com/pulseofculture?lang=en" target="_blank"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--twitter"></li></a>
-          <a href="https://www.facebook.com/translation/" target="_blank"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--facebook"></li></a>
-          <a href="https://www.linkedin.com/company-beta/1716475/" target="_blank"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--linkedin"></li></a>
+          <a href="https://www.instagram.com/wearetranslation/"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--instagram"></li></a>
+          <a href="https://twitter.com/pulseofculture?lang=en"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--twitter"></li></a>
+          <a href="https://www.facebook.com/translation/"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--facebook"></li></a>
+          <a href="https://www.linkedin.com/company-beta/1716475/"><li class="translationllc__contact-us__social-media__icon translationllc__contact-us__social-media__icon--linkedin"></li></a>
         </ul>
       </div>
     </div>
