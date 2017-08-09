@@ -58,7 +58,7 @@ gulp.task('compileJs', function() {
 gulp.task('compileHandlebars', function() {
   hbs.render('./views/layouts/main.handlebars', {body: '__body__'}).then(function(data) {
     hbs.render('./views/homepage.handlebars', content).then(function(homepageData) {
-      fs.writeFile('./public/dist/index.html', htmlMinify(data.replace('__body__', homepageData), {collapseWhitespace: true}), function(err) {
+      fs.writeFile('./public/index.html', htmlMinify(data.replace('__body__', homepageData), {collapseWhitespace: true}), function(err) {
         if (!err) {
           console.log('index.html file compiled');
         } else {
