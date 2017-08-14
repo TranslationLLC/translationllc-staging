@@ -9,9 +9,9 @@ module.exports = {
   workVideoOneHeader: 'KP + STEPHEN CURRY RAISE MENTAL HEALTH AWARENESS',
   workVideoOneContent: 'Quieting the mind to allow the body to thrive, Stephen Curry shows us that the real game begins within.',
 
-  workVideoTwoUrl: 'http://www.translationllc.com/assets/films/NFL.mp4',
-  workVideoTwoHeader: 'A STATEMENT OF UNITY ON THE GAME\'S BIGGEST STAGE',
-  workVideoTwoContent: '“Inside These Lines” shares an uplifting and unifying narrative about players and fans overcoming differences and banding together.',
+  workVideoTwoUrl: 'http://www.translationllc.com/assets/films/HandoffAcrossAmerica90sec720p.mp4',
+  workVideoTwoHeader: 'NFL PLAY FOOTBALL – SHOWING A SUMMERTIME SIDE TO THE GAME',
+  workVideoTwoContent: 'We wanted to remind kids that, for all the different aspects of football – fun is ingredient number one. We enlisted NFL stars Landon Collins, Stefon Diggs, Devonta Freeman, Travis Kelce and Marquette King, along with NBA star Nick Young and chart-topping rapper KYLE to showcase how the game\'s infectious spirit extends beyond the traditional field of play.',
 
   workVideoThreeUrl: 'http://www.translationllc.com/assets/films/VCF.mp4',
   workVideoThreeHeader: 'VCF STAGES A REBRAND WITH A NEW MUSICAL MIX',
