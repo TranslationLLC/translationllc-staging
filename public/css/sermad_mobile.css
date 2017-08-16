@@ -1,3 +1,30 @@
+.privacy_policy {
+	font-size:0.6em;
+}
+
+#privacy_policy {
+	width:100%;
+	padding:0px 0px 0px 0px;
+	color:#ffffff;
+	font-size:0.9em;
+}
+
+#privacy_policy h1 {
+	margin:0 0 10px 0;
+}
+
+#privacy_policy h2 {
+	margin:0 0 10px 0;
+}
+
+#privacy_policy h3 {
+	margin:0 0 10px 0;
+}
+
+#privacy_policy p {
+	margin:0 0 20px 0;
+}
+
 .translationllc__main__articles__article-publication {
 	color:#a6a6a6;
 }
