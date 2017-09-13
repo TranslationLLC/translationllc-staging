@@ -46,10 +46,10 @@ module.exports = {
   articleOneHeader: 'Translation Named Agency of Record for the Brooklyn Nets',
   articleOneByline: 'By: Erik Oster',
   
-  articleTwoPublication: 'Brandchannel',
-  articleTwoLink: 'http://www.brandchannel.com/2017/06/20/cannes-lions-nba-nfl-062017/',
-  articleTwoHeader: 'Cannes 2017: The Wise Women Of The NBA And NFL',
-  articleTwoByline: 'By: Sheila Shayon',
+  articleTwoPublication: 'Campaign',
+  articleTwoLink: 'https://www.youtube.com/watch?v=vNuOZtAj2pg',
+  articleTwoHeader: 'Our Chief Audience Officer Chaucer Barnes serves up knowledge on his journey and paying it forward.',
+  articleTwoByline: '',
 
   articleThreePublication: 'Berkeley News',
   articleThreeLink: 'http://news.berkeley.edu/2017/05/19/dj-khaled-surprises-statistics-graduation/',

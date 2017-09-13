@@ -45,6 +45,7 @@ h1, h2, h3, h4 {
 	right:1.8em;
 	top:2.8em;
 	font-size:0.81em;
+	width:30%;
 }
 
 .translationllc__nav__work {
@@ -271,4 +272,15 @@ h1 {
 }
 
 .translationllc__section-icon translationllc__section-icon--work {
+}
+
+.translationllc__main__united-masters__next-chapter {
+	text-align:center;
+	margin-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.translationllc__main__united-masters__next-chapter__content {
+	width:100%;
 }

@@ -1,20 +1,22 @@
 .translationllc__main__united-masters__gif {
   display: block;
-  width: 50%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
 }
 .translationllc__main__united-masters__next-chapter {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   box-sizing: border-box;
+  padding-bottom:30px;
 }
 .translationllc__main__united-masters__next-chapter__header {
+  margin-bottom: 15px;
   margin-bottom: 30px;
   font-family: 'Mark W01 Bold';
 }
 .translationllc__main__united-masters__next-chapter__content {
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-top: 15px;
+  /*font-size: 18px;*/
 }
 .translationllc__main__united-masters__um-logo {
   background-image: url(../assets/unitedmasters_logo.svg);
