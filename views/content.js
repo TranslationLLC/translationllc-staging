@@ -51,10 +51,10 @@ module.exports = {
   articleTwoHeader: 'Cannes 2017: The Wise Women Of The NBA And NFL',
   articleTwoByline: 'By: Sheila Shayon',
 
-  articleThreePublication: 'Berkeley News',
-  articleThreeLink: 'http://news.berkeley.edu/2017/05/19/dj-khaled-surprises-statistics-graduation/',
-  articleThreeHeader: 'Steve Stoute Addresses Berkeley And Surprises Graduates With DJ Khaled',
-  articleThreeByline :'By: Public Affairs, UC Berkley',
+  articleThreePublication: 'New York Times',
+  articleThreeLink: 'https://mobile.nytimes.com/2017/09/10/fashion/dapper-dan-gucci-partnership.html?referer=',
+  articleThreeHeader: 'Why Steve Stoute Celebrates the Dapper Dan and Gucci Collaboration',
+  articleThreeByline :'By: Matthew Schneier',
 
   articleFourPublication: 'Fast Co.',
   articleFourLink: 'https://www.fastcompany.com/40405973/the-nba-playoffs-are-here-and-heres-how-stephen-curry-trains-his-mi',
@@ -64,7 +64,7 @@ module.exports = {
   articleSixPublication: 'BRANDCHANNEL',
   articleSixLink: 'http://brandchannel.com/2017/04/10/la-la-land-vcf-041017/',
   articleSixHeader: 'Tapping La La Land’s Choreographer, VCF Is “Made To Mix”',
-  articleSixByline: 'BY: ABE SAUER',
+  articleSixByline: 'By: Abe Sauer',
 
   cultureSectionCopy: 'We believe brands that are brave enough to lead culture will always be more successful than brands chasing to follow it. At Translation, we help ambitious brands thrive in contemporary culture, because we live in it and invite our partners to innovate within it.',
 
