@@ -33,14 +33,21 @@
   background-image: url(../assets/HAA90sec945x768.jpg);
 }
 .translationllc__video__container--work-video--three {
-  background-image: url(../assets/VCF_mobile.jpg);
+  background-image: url(../assets/DSW_mobile.jpg);
 }
-.translationllc__video__container--work-video--four {
+
+.translationllc__video__container--work-video--five {
   background-image: url(../assets/AppleMusic_mobile.jpg);
 }
-.translationllc__video__container--work-video--five {
+
+/*.translationllc__video__container--work-video--five {
   background-image: url(../assets/mia-mobile.jpg);
+}*/
+
+.translationllc__video__container--work-video--four {
+  background-image: url(../assets/NBA_MOBILE[4].jpg);
 }
+
 .translationllc__video__container--work-video--six {
   background-image: url(../assets/paul-mobile.jpg);
 }
@@ -50,9 +57,7 @@
 .translationllc__video__container--work-video--eight {
   background-image: url(../assets/Champs_Khaled_mobile.jpg);
 }
-.translationllc__video__container--work-video--nine {
-  background-image: url(../assets/30_Shaq_Still003.jpg);
-}
+
 .translationllc__video__container--biggiebreakfast {
   background-image: url(../assets/biggiebreakfast_mobile.jpg);
 }

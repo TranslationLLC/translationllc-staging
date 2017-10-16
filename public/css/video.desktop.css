@@ -66,21 +66,29 @@
   background-image: url(../assets/HAA90sec1366x768.jpg);
 }
 .translationllc__video__container--work-video--three {
-  background-image: url(../assets/VCF_desktop.jpg);
+  background-image: url(../assets/DSW_desktop.jpg);
 }
+
 .translationllc__video__container--work-video--four {
+  background-image: url(../assets/NBA_DESKTOP[4].jpg);
+}
+
+.translationllc__video__container--work-video--five {
   background-image: url(../assets/AppleMusic_desktop.jpg);
 }
-.translationllc__video__container--work-video--five {
+
+.translationllc__video__container--work-video--six {
   background-image: url(../assets/mia-desktop.jpg);
 }
-.translationllc__video__container--work-video--six {
+
+.translationllc__video__container--work-video--seven {
   background-image: url(../assets/paul-web.jpg);
 }
-.translationllc__video__container--work-video--seven {
+
+.translationllc__video__container--work-video--eight {
   background-image: url(../assets/BrooklynNets_desktop.jpg);
 }
-.translationllc__video__container--work-video--eight {
+.translationllc__video__container--work-video--nine {
   background-image: url(../assets/Champs_Khaled_desktop.jpg);
 }
 .translationllc__video__container--biggiebreakfast {
