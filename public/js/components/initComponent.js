@@ -9,7 +9,7 @@ class InitComponent {
     this.initialScroll = true;
     this.showIntro = false;
     //change this flag to 'false' when the site should no longer jump to UM section; Sermad
-    this.jumpToUM = false;
+    this.jumpToUM = true;
     window.addEventListener('beforeunload', () => {
       window.scrollTo(0, 0);
     });

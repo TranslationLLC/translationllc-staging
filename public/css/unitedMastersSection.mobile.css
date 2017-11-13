@@ -1,7 +1,9 @@
 .translationllc__main__united-masters__gif {
+  
   display: block;
   width: 100%;
   margin: 0;
+  
 }
 
 .translationllc__main__united-masters__next-chapter {
@@ -27,7 +29,9 @@
   background-repeat: no-repeat;
 }
 .translationllc__main__united-masters {
+  /*
   position: relative;
   background: black;
   z-index: 3;
+  */
 }

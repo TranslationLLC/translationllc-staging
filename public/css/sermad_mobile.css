@@ -71,8 +71,20 @@
 
 }
 
-.translationllc__section-icon__copy--container translationllc__section-icon__copy--container--intro {
+.translationllc__main__united-masters__next-chapter a {
+	text-decoration:underline;
+}
 
+.translationllc__main__united-masters__next-chapter a:hover {
+	text-decoration:none;
+}
+
+.translationllc__section-icon__copy--container {
+	text-align:left;
+}
+
+.translationllc__section-icon__copy--container--intro {
+	text-align:left;
 }
 
 .translationllc__section-icon--work {

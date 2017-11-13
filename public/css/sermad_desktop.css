@@ -42,9 +42,10 @@ h1, h2, h3, h4 {
 }
 
 .translationllc__nav {
-	right:1.8em;
+	right:1em;
 	top:2.8em;
 	font-size:0.81em;
+	width:25%;
 }
 
 .translationllc__nav__work {
@@ -59,8 +60,8 @@ h1, h2, h3, h4 {
 }
 
 .translationllc__video__container__overlay--intro {
-	max-width:50%;
-	min-width:50%;
+	max-width:48%;
+	min-width:48%;
 	top:15%;
 	margin: auto;
     /*border: 3px solid #73AD21;*/
@@ -271,4 +272,36 @@ h1 {
 }
 
 .translationllc__section-icon translationllc__section-icon--work {
+}
+
+.translationllc__main__united-masters img {
+    width: 100%;
+    height: auto; 
+}
+
+.translationllc__main__united-masters__next-chapter {
+	text-align:center;
+	margin-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.translationllc__main__united-masters__next-chapter__content {
+	width:100%;
+}
+
+.translationllc__main__united-masters__next-chapter a {
+	text-decoration:underline;
+}
+
+.translationllc__main__united-masters__next-chapter a:hover {
+	text-decoration:none;
+}
+
+hr {
+	height:5px;
+	background-color:white;
+	opacity:0.8;
+	border:0px solid white;
+	margin-bottom:70px;
 }
