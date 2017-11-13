@@ -5,9 +5,9 @@ module.exports = {
   sizzleVideoHeader: 'GREATEST HITS',
   sizzleVideoContent: 'Whether it’s creating an alter ego for an NBA All-Star, producing a music festival for the new America, or giving the King of Snapchat his very own store, our work drives the cultural resonance of our partner brands.',
 
-  workVideoOneUrl: 'http://www.translationllc.com/assets/films/KP.mp4',
-  workVideoOneHeader: 'KP + STEPHEN CURRY RAISE MENTAL HEALTH AWARENESS',
-  workVideoOneContent: 'Quieting the mind to allow the body to thrive, Stephen Curry shows us that the real game begins within.',
+  workVideoOneUrl: 'http://www.translationllc.com/assets/films/OQYT0127000H_Going_Away_Party_v3_30_Twitter.mp4',
+  workVideoOneHeader: 'CLIFF PAUL’S FINAL ASSIST',
+  workVideoOneContent: 'Every great relationship must come to an end — even those destined for greatness. Fortunately for Chris Paul, Cliff Paul came through with a final assist – a referral for a new agent in Houston who’s such a great fit, he might as well be Cliff.',
 
   workVideoTwoUrl: 'http://www.translationllc.com/assets/films/HandoffAcrossAmerica90sec720p.mp4',
   workVideoTwoHeader: 'NFL PLAY FOOTBALL – SHOWING A SUMMERTIME SIDE TO THE GAME',
